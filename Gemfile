@@ -1,3 +1,5 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+ruby "3.1.6"
+
+gem "github-pages", "~> 228"  # This version is compatible with Ruby 3.1
