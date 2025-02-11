@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Tangible Feedback and Sharing of Emotions through Soft Toy Dinosaurs"
+title: "Affective Soft Toy Dinosaurs"
 category: projects
 tags:
   - Development

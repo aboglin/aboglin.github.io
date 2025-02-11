@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Evaluation of Patagonia's Corporate Identity for Product Development"
+title: "Patagonia Corporate Identity"
 category: projects
 tags:
   - Design

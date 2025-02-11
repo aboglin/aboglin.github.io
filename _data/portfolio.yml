@@ -385,10 +385,14 @@ pottery-barn:
 
 project-frog:
   title: "Product Designer for Project Frog, Inc."
-  short_title: "Project Frog"
+  short_title: "Project Frog, Inc."
   description: |
     As a product design engineer at Project Frog, my role was to design and manage several major product lines.
   client: Project Frog, Inc.
   date: 2007
   roles:
     - Product Designer
+  tags:
+    - Design
+    - Architecture
+    - Sustainability

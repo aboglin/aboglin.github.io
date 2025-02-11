@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "CHI Ideation Sessions: A Tool for Brainstorming"
+title: "CHI Ideation Sessions"
 category: projects
 tags:
   - Design

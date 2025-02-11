@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Product Designer for Project Frog, Inc."
+title: "Project Frog, Inc."
 category: projects
 ---
 
