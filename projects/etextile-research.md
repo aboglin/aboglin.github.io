@@ -8,6 +8,8 @@ tags:
 
 {{ site.data.portfolio.etextile-research.description }}
 
-**Skills:** {{ site.data.portfolio.etextile-research.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.etextile-research.date }}
 
-**Roles:** {{ site.data.portfolio.etextile-research.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.etextile-research.course }}
+
+**Skills:** {{ site.data.portfolio.etextile-research.skills | join: ", " }}

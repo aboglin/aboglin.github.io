@@ -9,6 +9,8 @@ tags:
 
 {{ site.data.portfolio.etextile.description }}
 
-**Skills:** {{ site.data.portfolio.etextile.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.etextile.date }}
 
-**Roles:** {{ site.data.portfolio.etextile.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.etextile.course }}
+
+**Skills:** {{ site.data.portfolio.etextile.skills | join: ", " }}

@@ -10,6 +10,8 @@ tags:
 
 {{ site.data.portfolio.professor-on-fire.description }}
 
-**Skills:** {{ site.data.portfolio.professor-on-fire.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.professor-on-fire.date }}
 
-**Roles:** {{ site.data.portfolio.professor-on-fire.roles | join: ", " }}
+**Client:** {{ site.data.portfolio.professor-on-fire.client }}
+
+**Skills:** {{ site.data.portfolio.professor-on-fire.skills | join: ", " }}

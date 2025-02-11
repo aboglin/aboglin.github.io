@@ -6,6 +6,8 @@ category: projects
 
 {{ site.data.portfolio.agent-j.description }}
 
-**Skills:** {{ site.data.portfolio.agent-j.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.agent-j.date }}
 
-**Roles:** {{ site.data.portfolio.agent-j.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.agent-j.course }}
+
+**Skills:** {{ site.data.portfolio.agent-j.skills | join: ", " }}

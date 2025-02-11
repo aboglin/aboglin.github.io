@@ -11,6 +11,8 @@ tags:
 
 {{ site.data.portfolio.haptics.description }}
 
-**Skills:** {{ site.data.portfolio.haptics.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.haptics.date }}
 
-**Roles:** {{ site.data.portfolio.haptics.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.haptics.course }}
+
+**Skills:** {{ site.data.portfolio.haptics.skills | join: ", " }}

@@ -6,6 +6,8 @@ category: projects
 
 {{ site.data.portfolio.project-pilgrim.description }}
 
-**Skills:** {{ site.data.portfolio.project-pilgrim.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.project-pilgrim.date }}
 
-**Roles:** {{ site.data.portfolio.project-pilgrim.roles | join: ", " }}
+**Client:** {{ site.data.portfolio.project-pilgrim.client }}
+
+**Skills:** {{ site.data.portfolio.project-pilgrim.skills | join: ", " }}

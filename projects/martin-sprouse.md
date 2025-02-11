@@ -8,6 +8,8 @@ tags:
 
 {{ site.data.portfolio.martin-sprouse.description }}
 
-**Skills:** {{ site.data.portfolio.martin-sprouse.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.martin-sprouse.date }}
 
-**Roles:** {{ site.data.portfolio.martin-sprouse.roles | join: ", " }}
+**Client:** {{ site.data.portfolio.martin-sprouse.client }}
+
+**Skills:** {{ site.data.portfolio.martin-sprouse.skills | join: ", " }}

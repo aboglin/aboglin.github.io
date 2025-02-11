@@ -10,6 +10,6 @@ tags:
 
 {{ site.data.portfolio.project-frog.description }}
 
-**Client:** {{ site.data.portfolio.project-frog.client }}
+**Date:** {{ site.data.portfolio.project-frog.date }}
 
-**Roles:** {{ site.data.portfolio.project-frog.roles | join: ", " }}
+**Client:** {{ site.data.portfolio.project-frog.client }}

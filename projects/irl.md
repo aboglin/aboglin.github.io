@@ -9,6 +9,8 @@ tags:
 
 {{ site.data.portfolio.irl.description }}
 
-**Skills:** {{ site.data.portfolio.irl.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.irl.date }}
 
-**Roles:** {{ site.data.portfolio.irl.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.irl.course }}
+
+**Skills:** {{ site.data.portfolio.irl.skills | join: ", " }}

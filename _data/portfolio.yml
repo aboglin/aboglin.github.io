@@ -11,10 +11,6 @@ solar-system-bookshelf:
     - HTML
     - CSS
     - JavaScript
-  tags:
-    - Front-End
-    - InfoVis
-    - UX
 
 hypothesis-generation:
   title: "Hypothesis Generation via Node-Link Diagrams"
@@ -26,10 +22,6 @@ hypothesis-generation:
     - JavaScript
     - HTML
     - CSS
-  tags:
-    - InfoVis
-    - UX
-    - Front-End
 
 instrumented-dog-toys:
   short_title: "FIDO: A Wearable Device for Working Dogs"
@@ -45,14 +37,6 @@ instrumented-dog-toys:
     - Experimental Design
     - Machine Learning
     - Data Analysis
-  tags:
-    - Development
-    - Design
-    - IoT
-    - Mobile and Ubiquitous Computing
-    - Protoyping Hardware
-    - Puppies!
-    - Tangible User Interfaces
 
 agent-j:
   title: "Agent J: An Architectural AI Agent"
@@ -88,8 +72,6 @@ ml4t:
     - KNN
     - Regression Trees
   website: "http://quantsoftware.gatech.edu/Machine_Learning_for_Trading_Course"
-  tags:
-    - Machine Learning
   roles:
     - Individual Contributor
 
@@ -109,10 +91,6 @@ professor-on-fire:
   roles:
     - Hardware
     - Software
-  tags:
-    - Wearables
-    - Development
-    - Protoyping Hardware
 
 dinosaurs:
   title: "Tangible Feedback and Sharing of Emotions through Soft Toy Dinosaurs"
@@ -131,13 +109,6 @@ dinosaurs:
     - Teensyduino
   roles:
     - Individual Contributor
-  tags:
-    - Development
-    - IoT
-    - Affective Computing
-    - Protoyping Hardware
-    - Tangible User Interfaces
-    - Design
 
 project-pilgrim:
   title: Project Pilgrim
@@ -171,11 +142,6 @@ haptics:
     - Android Dev
   roles:
     - Individual Contributor
-  tags:
-    - Design
-    - Development
-    - Research
-    - Wearables
 
 ai-project:
   title: "Detecting Occupancy Patterns of Smart Buildings for Efficient Energy Management"
@@ -189,10 +155,6 @@ ai-project:
     - MATLAB
     - Python
     - HMMs
-  tags:
-    - Architecture
-    - Artificial Intelligence
-    - Sustainability
 
 irl:
   title: "Chaining Dynamic Movement Primitives (DMPs) for Learning Complex Tasks from Demonstration"
@@ -210,9 +172,6 @@ irl:
   roles:
     - Code Contributor
     - 3 person team
-  tags:
-    - Machine Learning
-    - Development
 
 mit:
   title: "MIT Media Lab Member Connect App"
@@ -226,9 +185,6 @@ mit:
   roles:
     - Lead UX Designer
     - 2 person team
-  tags:
-    - Design
-    - UX
 
 discovery:
   title: "Situational and Contextually-Aware Discovery through Person to Person Mobile & Tangible Interactions"
@@ -248,12 +204,6 @@ discovery:
     - UX Lead
     - Physical Prototyping
     - Qualitative studies on a 3 person team
-  tags:
-    - IoT
-    - Mobile and Ubiquitous Computing
-    - Protoyping Hardware
-    - Tangible User Interfaces
-    - UX
 
 chi-ideation-sessions:
   title: "CHI Ideation Sessions: A Tool for Brainstorming"
@@ -271,10 +221,6 @@ chi-ideation-sessions:
   roles:
     - UX Lead
     - 2 person team with guidance from Dave Meeker
-  tags:
-    - Design
-    - UX
-    - Protoyping Hardware
 
 etextile-research:
   title: "eTextile Knee Sleeve Research"
@@ -292,8 +238,6 @@ etextile-research:
     - Interviews
     - Observation
     - Participatory Design Workshop
-  tags:
-    - Research
 
 etextile:
   title: "eTextile Knee Sleeve"
@@ -307,9 +251,6 @@ etextile:
     - Prototyping
   roles:
     - Individual Contributor
-  tags:
-    - Wearables
-    - Protoyping Hardware
 
 conductive-ink-toolkit:
   title: "Development of a Conductive Ink Toolkit for Educational Purposes"
@@ -325,13 +266,6 @@ conductive-ink-toolkit:
   roles:
     - Project Lead
     - All Physical Prototyping
-  tags:
-    - Development
-    - Protoyping Hardware
-    - Tangible User Interfaces
-    - UX
-    - Design
-    - Mobile and Ubiquitous Computing
 
 patagonia:
   title: Evaluation of Patagonia's Corporate Identity for Product Development
@@ -349,9 +283,6 @@ patagonia:
     - Personas
   roles:
     - Individual Contributor
-  tags:
-    - Design
-    - Research
 
 martin-sprouse:
   title: Product Designer for Martin Sprouse Furniture
@@ -365,8 +296,6 @@ martin-sprouse:
     - CAD Software
   roles:
     - Product Designer
-  tags:
-    - Design
 
 pottery-barn:
   title: Concept Development for Pottery Barn
@@ -380,19 +309,13 @@ pottery-barn:
     - CAD Software
   roles:
     - Product Designer
-  tags:
-    - Design
 
 project-frog:
   title: "Product Designer for Project Frog, Inc."
-  short_title: "Project Frog, Inc."
+  short_title: "Project Frog"
   description: |
     As a product design engineer at Project Frog, my role was to design and manage several major product lines.
   client: Project Frog, Inc.
   date: 2007
   roles:
     - Product Designer
-  tags:
-    - Design
-    - Architecture
-    - Sustainability

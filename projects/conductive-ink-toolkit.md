@@ -13,6 +13,8 @@ tags:
 
 {{ site.data.portfolio.conductive-ink-toolkit.description }}
 
-**Skills:** {{ site.data.portfolio.conductive-ink-toolkit.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.conductive-ink-toolkit.date }}
 
-**Roles:** {{ site.data.portfolio.conductive-ink-toolkit.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.conductive-ink-toolkit.course }}
+
+**Skills:** {{ site.data.portfolio.conductive-ink-toolkit.skills | join: ", " }}

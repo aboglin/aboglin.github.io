@@ -10,6 +10,8 @@ tags:
 
 {{ site.data.portfolio.ai-project.description }}
 
-**Skills:** {{ site.data.portfolio.ai-project.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.ai-project.date }}
 
-**Roles:** {{ site.data.portfolio.ai-project.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.ai-project.course }}
+
+**Skills:** {{ site.data.portfolio.ai-project.skills | join: ", " }}

@@ -10,6 +10,8 @@ tags:
 
 {{ site.data.portfolio.chi-ideation-sessions.description }}
 
-**Skills:** {{ site.data.portfolio.chi-ideation-sessions.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.chi-ideation-sessions.date }}
 
-**Roles:** {{ site.data.portfolio.chi-ideation-sessions.roles | join: ", " }}
+**Client:** {{ site.data.portfolio.chi-ideation-sessions.client }}
+
+**Skills:** {{ site.data.portfolio.chi-ideation-sessions.skills | join: ", " }}

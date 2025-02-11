@@ -12,6 +12,8 @@ tags:
 
 {{ site.data.portfolio.discovery.description }}
 
-**Skills:** {{ site.data.portfolio.discovery.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.discovery.date }}
 
-**Roles:** {{ site.data.portfolio.discovery.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.discovery.course }}
+
+**Skills:** {{ site.data.portfolio.discovery.skills | join: ", " }}

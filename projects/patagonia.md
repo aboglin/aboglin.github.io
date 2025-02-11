@@ -9,6 +9,8 @@ tags:
 
 {{ site.data.portfolio.patagonia.description }}
 
-**Skills:** {{ site.data.portfolio.patagonia.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.patagonia.date }}
 
-**Roles:** {{ site.data.portfolio.patagonia.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.patagonia.course }}
+
+**Skills:** {{ site.data.portfolio.patagonia.skills | join: ", " }}

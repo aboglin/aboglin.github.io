@@ -8,6 +8,8 @@ tags:
 
 {{ site.data.portfolio.pottery-barn.description }}
 
-**Skills:** {{ site.data.portfolio.pottery-barn.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.pottery-barn.date }}
 
-**Roles:** {{ site.data.portfolio.pottery-barn.roles | join: ", " }}
+**Client:** {{ site.data.portfolio.pottery-barn.client }}
+
+**Skills:** {{ site.data.portfolio.pottery-barn.skills | join: ", " }}

@@ -13,6 +13,8 @@ tags:
 
 {{ site.data.portfolio.dinosaurs.description }}
 
-**Skills:** {{ site.data.portfolio.dinosaurs.skills | join: ", " }}
+**Date:** {{ site.data.portfolio.dinosaurs.date }}
 
-**Roles:** {{ site.data.portfolio.dinosaurs.roles | join: ", " }}
+**Course:** {{ site.data.portfolio.dinosaurs.course }}
+
+**Skills:** {{ site.data.portfolio.dinosaurs.skills | join: ", " }}
