@@ -1,9 +1,14 @@
 ---
-title: "Development of a Conductive Ink Toolkit for Educational Purposes"
 layout: default
-date: 2013-05-01
-categories: projects
-tags: [Development, Prototyping Hardware, Tangible User Interfaces, UX, Design, Mobile and Ubiquitous Computing, Arduino, Conductive Ink Printers, Illustrator]
+title: "Conductive Ink Toolkit"
+category: projects
+tags:
+  - Development
+  - Protoyping Hardware
+  - Tangible User Interfaces
+  - UX
+  - Design
+  - Mobile and Ubiquitous Computing
 ---
 
 {{ site.data.portfolio.conductive-ink-toolkit.description }}

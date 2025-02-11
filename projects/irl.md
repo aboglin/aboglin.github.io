@@ -1,9 +1,10 @@
 ---
-title: "Chaining DMPs for LfD"
 layout: default
-date: 2014-12-01
-categories: projects
-tags: [Machine Learning, Development, Java, Python, DMPs]
+title: "Chaining DMPs for LfD"
+category: projects
+tags:
+  - Machine Learning
+  - Development
 ---
 
 {{ site.data.portfolio.irl.description }}

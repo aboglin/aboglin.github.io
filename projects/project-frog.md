@@ -1,7 +1,11 @@
 ---
 layout: default
-title: "Project Frog, Inc."
+title: "Product Designer for Project Frog, Inc."
 category: projects
+tags:
+  - Design
+  - Architecture
+  - Sustainability
 ---
 
 {{ site.data.portfolio.project-frog.description }}

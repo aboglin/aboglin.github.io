@@ -1,9 +1,13 @@
 ---
-title: "Situational and Contextually-Aware Discovery"
-date: 2014-12-01
 layout: default
-categories: projects
-tags: [IoT, Mobile and Ubiquitous Computing, Prototyping Hardware, Tangible User Interfaces, UX, Questionnaires, Concepting, Prototyping, Qualitative Evaluation, Quantitative Evaluation]
+title: "Situational and Contextually-Aware Discovery"
+category: projects
+tags:
+  - IoT
+  - Mobile and Ubiquitous Computing
+  - Protoyping Hardware
+  - Tangible User Interfaces
+  - UX
 ---
 
 {{ site.data.portfolio.discovery.description }}

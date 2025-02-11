@@ -1,9 +1,12 @@
 ---
-title: "FIDO: Haptics"
 layout: default
-date: 2015-01-01
-categories: projects
-tags: [Design, Development, Research, Wearables, Arduino, Research Protocols, LRA Motors, Android Dev]
+title: "FIDO: Haptics"
+category: projects
+tags:
+  - Design
+  - Development
+  - Research
+  - Wearables
 ---
 
 {{ site.data.portfolio.haptics.description }}

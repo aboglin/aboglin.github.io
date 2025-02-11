@@ -1,9 +1,11 @@
 ---
-title: "Smart Building Energy Management"
 layout: default
-date: 2014-12-01
-categories: projects
-tags: [Architecture, Artificial Intelligence, Sustainability, MATLAB, Python, HMMs]
+title: "Smart Building Energy Management"
+category: projects
+tags:
+  - Architecture
+  - Artificial Intelligence
+  - Sustainability
 ---
 
 {{ site.data.portfolio.ai-project.description }}
