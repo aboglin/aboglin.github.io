@@ -21,3 +21,17 @@ a {
   color: #3498db;
   text-decoration: none;
 }
+
+.section-one {
+  background: #ff6347; /* Tomato */
+  color: #fff;
+  padding: 2rem;
+  width: 100%;
+}
+
+.section-two {
+  background: #4682b4; /* SteelBlue */
+  color: #fff;
+  padding: 2rem;
+  width: 100%;
+}

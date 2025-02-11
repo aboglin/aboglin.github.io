@@ -1,0 +1,394 @@
+solar-system-bookshelf:
+  title: "Solar System Sci-Fi Bookshelf"
+  short_title: "Solar System Bookshelf"
+  description: |
+    The goal of this project was to allow people to explore the chronological impact of news and real world events on popular culture. Specifically, we were looking at how news related to astronomy and space travel impacted portrayals of our solar system in fiction. This included the overall volume of science fiction writing, changing depictions of planets over time (as more details of their geography are discovered), and trends in which planets are popular or unpopular settings for novels.
+
+    Our dataset consisted of 459 science fiction novels published over the past 363 years (though the majority were published in the 20th century). For the purposes of this project, we stuck to full length novels and novellas, not short stories, and mostly to books originally published in English. We also confined ourselves to novels taking place within the solar system, but not solely on Earth or fictional planets. The data for our project came primarily from the book review site Goodreads, with some additional data on historical events from NASA.
+  client: CS7450 Information Visualization
+  date: Fall 2017
+  skills:
+    - HTML
+    - CSS
+    - JavaScript
+  tags:
+    - Front-End
+    - InfoVis
+    - UX
+
+hypothesis-generation:
+  title: "Hypothesis Generation via Node-Link Diagrams"
+  description: |
+    Analyzing large quantities of textual data can be a time consuming and daunting task. For this project, we pulled in a subset of the 2006 VAST Challenge dataset, which consisted of almost 250 fictitious news stories from the fictitious town of Alderwood. As analysts, our goal was to determine if anything fishy was going on in this town. To help enable this, we built a tool using D3, leveraging a force layout with entities as nodes to enable high-level navigation of the document space. The force layout leverages the Gestalt principle of proximity to suggest groups of entities that are likely to have a causal connection or other significant relationship. In this way, the tool also supported hypothesis generation by suggesting clusters of entities that merited further investigation. Additionally, access to raw document text and the timeline, then enables further interrogation and either the acceptance or rejection of information within one's hypotheses. The visual nature of the force layout also supports random discovery of nodes that might seem interesting to humans, but that a machine would not identify as being of interest. For example, <b>what the heck is the FDA investigating in Alderwood?</b>
+  course: CS8801 Visual Design Analysis
+  date: Spring 2018
+  skills:
+    - JavaScript
+    - HTML
+    - CSS
+  tags:
+    - InfoVis
+    - UX
+    - Front-End
+
+instrumented-dog-toys:
+  short_title: "FIDO: A Wearable Device for Working Dogs"
+  title: "Predicting the Suitability of Working Dogs using Instrumented Dog Toys"
+  description: |
+    Working dogs are significantly beneficial to society; however, a substantial number of dogs are released from time consuming and expensive training programs because of unsuitability in behavior. Early prediction of successful service dog placement could save time, resources, and funding. Our research focus was to explore whether aspects of canine temperament can be detected from interactions with sensors, and to develop classifiers that correlate sensor data to predict the success (or failure) of assistance dogs in advanced training. In a 2-year longitudinal study, our team tested a cohort of dogs entering advanced training in the Canine Companions for Independence (CCI) Program with 2 instrumented dog toys: a silicone ball and a silicone tug sensor. We then created a logistic model tree classifier to predict service dog success using only 5 features derived from dog-toy interactions. During randomized 10-fold cross validation where 4 of the 40 dogs were kept in an independent test set for each fold, our classifier predicted the dogs' outcomes with 87.5% average accuracy. We assessed the reliability of our model by performing the testing routine 10 times over 1.5 years for a single suitable working dog, which predicted that the dog would pass each time. We calculated the resource benefit of identifying dogs who would fail early in their training, and the value for a cohort of 40 dogs using our toys and our methods for prediction was over $70,000. With CCI's 6 training centers, annual savings could be upwards of $5 million per year.
+  client: DogStar Technologies and Canine Companions for Independence (CCI)
+  date: August 2015
+  skills:
+    - Development
+    - Prototyping
+    - Design
+    - Experimental Design
+    - Machine Learning
+    - Data Analysis
+  tags:
+    - Development
+    - Design
+    - IoT
+    - Mobile and Ubiquitous Computing
+    - Protoyping Hardware
+    - Puppies!
+    - Tangible User Interfaces
+
+agent-j:
+  title: "Agent J: An Architectural AI Agent"
+  description: |
+    Our team project goal was to replicate the design process of an architect in the early stages of generating a custom house for a client. We developed an agent that tried to capture the client's needs and expectations when interacting with the client. The output is a sketch that reflected not only explicit inputs from the client but also other background information such as common facts or learned knowledge. Part of the project requirements were to integrate aspects of cognitive science, and in our case, we implemented observed forms of Distribute Cognition and Emotion into Agent J.
+
+    We started without a good representation of the architectural process and, as we added new information, we updated our personal mental representations to match what we saw. As we learned more about the architectural process, as we interviewed across participants, and as specific elements were reiterated, different features of the process were reinforced and were implemented in Agent J, our architect AI agent.
+  course: CS6795 Introduction to Cognitive Science
+  date: July 2016
+  skills:
+    - Qualitative Coding
+    - Interviews
+    - Observation
+    - UX
+  roles:
+    - Project Lead
+    - Qualitative Analysis
+    - 5 person team
+
+ml4t:
+  title: "Machine Learning for Trading"
+  description: |
+    The course introduces students to the real world challenges of implementing machine learning based trading strategies including the algorithmic steps from information gathering to market orders. The focus is on how to apply probabilistic machine learning approaches to trading decisions. We consider statistical approaches like linear regression, Q-Learning, KNN and regression trees and how to apply them to actual stock trading situations.
+
+    It was divided into five main projects: assessing a portfolio, instance / ensemble learners, market simulators, trading learners, and reinforcement learning.
+  course: CS6601 Machine Learning for Trading
+  date: December 2014
+  skills:
+    - Pandas
+    - Python
+    - Linear Regression
+    - Q-Learning
+    - KNN
+    - Regression Trees
+  website: "http://quantsoftware.gatech.edu/Machine_Learning_for_Trading_Course"
+  tags:
+    - Machine Learning
+  roles:
+    - Individual Contributor
+
+professor-on-fire:
+  title: "Professor on Fire Shawl"
+  short_title: "Professor on Fire"
+  description: |
+    Collaborating with Clint Zeagler and Jessica Pater, we were asked to create a wearable for Dr. Beth Mynatt to wear while receiving recognition as an ACM Fellow. My roles was to lead the construction and development of the lighting that pulsed in response to the applause from the audience. The lighting had two additional modes: an ambient pulse that did not respond to noise, for when she was speaking, and an "off" mode.
+
+    I urge you to check out Dr. Mynatt wearing it <a href="https://youtu.be/YUn3GYCYndU">here</a>.
+  client: GVU Center
+  date: July 2016
+  skills:
+    - Hardware prototyping
+    - Arduino
+    - FFT
+  roles:
+    - Hardware
+    - Software
+  tags:
+    - Wearables
+    - Development
+    - Protoyping Hardware
+
+dinosaurs:
+  title: "Tangible Feedback and Sharing of Emotions through Soft Toy Dinosaurs"
+  short_title: "Affective Soft Toy Dinosaurs"
+  description: |
+    How can we maintain and build relationships from afar? Students studying abroad - aging parents in retirement homes - best friends living on different sides of the country - brothers and sisters separated for the first time in 18 years. With our schedules getting busier and busier and our lives being completely consumed by the present, it's important to take the time to let them know that we love them and think about them. How do we enable this to be easier? How can we passively remind users to check in?
+
+    This project investigates the interplay between a set of "smart" dinosaurs, embedded with EDA sensing, and a mobile device communicating via WiFi. When one person touches the dinosaur, the other dinosaur lights up, letting the person at the other end know that their friend is thinking about them.
+  course: CS6452 Prototyping Interactive Systems
+  date: December 2015
+  skills:
+    - Android Dev
+    - Physical Prototyping
+    - NodeJS
+    - Socket.io
+    - Teensyduino
+  roles:
+    - Individual Contributor
+  tags:
+    - Development
+    - IoT
+    - Affective Computing
+    - Protoyping Hardware
+    - Tangible User Interfaces
+    - Design
+
+project-pilgrim:
+  title: Project Pilgrim
+  description: |
+    Tired of juggling between apps to manage your connected devices? Or, annoyed with lengthy setup processes to connect your "smart" light bulbs, coffee maker or crock pot? Imagine if your devices at home connected through your phone rather than many pin numbers or pass codes to gain access.
+
+    Pilgrim is a project built at the <a href="http://about.att.com/innovation/foundry">AT&T Foundry</a> in Atlanta that makes it simple to integrate "smart" light bulbs and other household items into your everyday life. A single app can monitor and control all your devices on the AT&T network. Pilgrim also gives you the ability to share control of each device. In this way, you can "link experiences" across apps on your phone or tablet. For example, if your connected car leaves the driveway and your home lights are still on, you can turn them off using Pilgrim.
+
+    In the future, Pilgrim could let you use your phone to give temporary access to your home. This project is just one example of how technology could help simplify your life.
+  client: AT&T Foundry, Ecosystems and Innovation
+  date: May 2015
+  skills:
+    - Raspberry Pi
+    - Linux
+    - NodeJS
+    - Android Dev
+  roles:
+    - Technical Intern
+
+haptics:
+  title: "FIDO: Haptics as a Communication Tool"
+  short_title: "FIDO: Haptics"
+  description: |
+    Working dogs perform a variety of essential services for their human partners, from assisting people with disabilities, to Search and Rescue, police, and military work. Recent interest in the nascent field of Animal-Computer Interaction has prompted research in computer-mediated technology for communication between working dogs and their handlers. Haptic (touch) interfaces in the form of vibrating motors are a promising approach for handler-to-dog communication. Haptic interfaces can provide a silent, long-range method of sending commands to a dog, when voice or hand signals are inappropriate or impossible. However, evaluating haptic interfaces for dogs, who cannot self-report sensations, creates interesting challenges. This project draws on human-computer interaction concepts, such as Just Noticeable Difference, to explore methods and issues in evaluating haptic interfaces for working dogs. We created a haptic system and developed an evaluation method, reporting results for ten dogs of widely varying breeds, sizes, and coat types.
+  course: HCI Masters Project
+  date: 2015
+  skills:
+    - Arduino
+    - Research Protocols
+    - LRA Motors
+    - Android Dev
+  roles:
+    - Individual Contributor
+  tags:
+    - Design
+    - Development
+    - Research
+    - Wearables
+
+ai-project:
+  title: "Detecting Occupancy Patterns of Smart Buildings for Efficient Energy Management"
+  short_title: "Smart Building Energy Management"
+  # TODO: Grab the citations that are referred to in the description text
+  description: |
+    In 2011, the US building sector accounted for 41% of the total energy consumed, outperforming the transportation and industrial sectors by 28% and 31%, respectively.* Prior studies show that occupancy pattern detection can reduce the energy consumption of lighting by 50% and air conditioning by 20%.** The prediction of occupancy patterns is particularly important in Heating Ventilation and Air Conditioning (HVAC) control systems because the process of reaching the appropriate temperature is time consuming and costly***, however, the current standard from the American Society of Heating Refrigerating & Air-conditioning Engineers (ASHRAE) is a fixed model assuming identical occupancy patterns across buildings with different uses (e.g. commercial, retail). The objective of this study was to develop an AI-based model that predicted the occupancy pattern of a commercial building (for e.g. Mitsubishi Electric Research Laboratory (MERL)) in order to anticipate the optimal temperature for the HVAC system one hour from the present. We then compare our model of occupancy patterns with current standards from ASHRAE and provide an analysis of energy savings by adopting this model.
+  course: CS6601 Artificial Intelligence
+  date: December 2014
+  skills:
+    - MATLAB
+    - Python
+    - HMMs
+  tags:
+    - Architecture
+    - Artificial Intelligence
+    - Sustainability
+
+irl:
+  title: "Chaining Dynamic Movement Primitives (DMPs) for Learning Complex Tasks from Demonstration"
+  short_title: "Chaining DMPs for LfD"
+  description: |
+    Learning complex tasks is an important goal for Learning from Demonstration. Dynamic Movement Primitives (DMPs), which can be used to encode a trajectory, are a common approach to skill learning. However, it can be difficult to use a DMP to encode a complex task, particularly one that must be flexible enough to accommodate multiple targets that are to be reached throughout the skill execution.
+
+    We take a different approach to task learning: chaining multiple DMPs to represent a series of sub-skills, which amount to a complex task. By splitting up a complicated task into several sub-skills and learning a DMP for each sub-skill, the resulting task execution can be more flexible in reaching multiple targets throughout completion. We tested a approach using a book-shelving problem in which the robot learner was taught to slide a book to the edge of a countertop, reorient it, and place it on a target area. We explored using this chained- DMP approach for two scenarios: one in which DMPs modeled a set of three demonstrations, and one in which DMPs modeled a single demonstration. We found that chaining multiple DMPs that were trained over a single demonstration may be an effective method for encoding complex skills.
+  course: Interactive Robot Learning
+  date: December 2014
+  skills:
+    - Java
+    - Python
+    - DMPs
+  roles:
+    - Code Contributor
+    - 3 person team
+  tags:
+    - Machine Learning
+    - Development
+
+mit:
+  title: "MIT Media Lab Member Connect App"
+  description: |
+    The app was developed to help MIT's Media Lab industry partners connect with different labs and researchers within the Media Lab at the annual Member Event. It allows partners to manage their event schedule, continue conversations with people they've met, and create meaningful relationships with the students and their projects.
+  client: MIT Media Lab and Industry Partners
+  date: 2013
+  skills:
+    - Illustrator
+    - UX
+  roles:
+    - Lead UX Designer
+    - 2 person team
+  tags:
+    - Design
+    - UX
+
+discovery:
+  title: "Situational and Contextually-Aware Discovery through Person to Person Mobile & Tangible Interactions"
+  short_title: "Situational and Contextually-Aware Discovery"
+  # TODO: Grab the citations that are referred to in the description text
+  description: |
+    Within the past couple decades, particularly within the United States, populations have shifted from being extremely rural to being urbanized.* This unfamiliar and transient nature of our society often leaves a person experiencing a wide range of emotions as they move from one place to the next. As a greenhorn acquires information regarding their new surroundings and develops a routine rich in comfortable locations and experiences this turmoil subsides, but little innate guidance is provided for a new resident to cope with this highly personal process. Coarse knowledge of the culture of a neighborhood does not provide an easy introduction to the places or people within it. As a result, our problem space explores methods to address these issues post-relocation by considering the emotional, spatial, and social aspects associated with it.
+  course: CS6750 Human Computer Interaction
+  date: December 2014
+  skills:
+    - Questionnaires
+    - Concepting
+    - Prototyping
+    - Qualitative Evaluation
+    - Quantitative Evaluation
+  roles:
+    - UX Lead
+    - Physical Prototyping
+    - Qualitative studies on a 3 person team
+  tags:
+    - IoT
+    - Mobile and Ubiquitous Computing
+    - Protoyping Hardware
+    - Tangible User Interfaces
+    - UX
+
+chi-ideation-sessions:
+  title: "CHI Ideation Sessions: A Tool for Brainstorming"
+  short_title: "CHI Ideation Sessions"
+  description: |
+    Another intern and I were tasked with creating a tool for ideation while at Roundarch Isobar. The goal was not for meaningful talk, but to be loud, cramped, crazy, and beer-and-pizza-fueled fun. The goal was to reach into the heads of the brilliant people at Isobar and root around in their collective subconscious, and "yank out whole handfuls of awesome." Topics could be anything — answering questions on existing projects, how to break into new markets, or simply what the company is thinking about any topic at any given moment.
+
+    We conducted 3 pilot studies, allowing us to fine tune the process and make sure that different personalities felt included.
+  client: Isobar
+  date: 2013
+  skills:
+    - UX
+    - Research Protocols
+    - Qualitative Coding
+  roles:
+    - UX Lead
+    - 2 person team with guidance from Dave Meeker
+  tags:
+    - Design
+    - UX
+    - Protoyping Hardware
+
+etextile-research:
+  title: "eTextile Knee Sleeve Research"
+  description: |
+    This study intended to understand the interaction between various primary stakeholders, such as Total Knee Arthroplasty (TKA) patients and their doctors.  Through expert interviews and the observation of the rehabilitation process, an examination of existing techniques utilized by physical therapists during knee rehabilitation were analyzed with the intent to recognize how users interact with their existing rehabilitation products.  Ultimately however, the purpose was to look for product opportunities in the current system.
+
+    Secondly, a Participatory Ideation Workshop was conducted with users who have either performed, are currently attending, or intending to go through knee rehabilitation.  The goal of this workshop was to understand the user's perception of rehabilitation and technology, establish design criteria, and develop potential directions for a final product.
+  course: Industrial Design Masters Thesis
+  roles:
+    - Individual Contributor
+  date: 2013
+  skills:
+    - Qualitative Coding
+    - Affinity Diagramming
+    - Interviews
+    - Observation
+    - Participatory Design Workshop
+  tags:
+    - Research
+
+etextile:
+  title: "eTextile Knee Sleeve"
+  description: |
+    Using the design criteria established during the workshop, the study designed and developed a physical therapy device using eTextile techniques and wearable technologies.  The roles that social acceptability, wearability, and fashion play are central factors to product adoption of wearable products.  The objective was to develop a platform for which others can develop their own system.
+
+    Lastly, this study evaluated the wearability and social acceptability of the final product.  The goal of this phase was to assess the design criteria developed throughout the study and establish the validity of the design platform.
+  course: Industrial Design Masters Thesis
+  date: 2013
+  skills:
+    - Prototyping
+  roles:
+    - Individual Contributor
+  tags:
+    - Wearables
+    - Protoyping Hardware
+
+conductive-ink-toolkit:
+  title: "Development of a Conductive Ink Toolkit for Educational Purposes"
+  short_title: "Conductive Ink Toolkit"
+  description: |
+    This project discusses the design and development of a toolkit interface to enable the construction of interactive paper tools. Our work for this project consisted of three main parts. The first part was the development of a software toolkit, or the graphical user interface. This toolkit allows the user to create a drawing using different components and print out interactive learning tools. The second part was the design of the hardware architecture, or the physical user interface. An Arduino device was flexible enough so that it was easily configured to work with various interactive components and, for this project, the output of the interaction responded with LED lights. Lastly, the project sought feedback on the interaction of both the graphical and physical interfaces from Electrical Engineering, Human-Computer Interaction, and Industrial Design experts.
+  course: CS7470 Mobile and Ubiquitous Computing
+  date: May 2013
+  skills:
+    - Arduino
+    - Conductive Ink Printers
+    - Illustrator
+  roles:
+    - Project Lead
+    - All Physical Prototyping
+  tags:
+    - Development
+    - Protoyping Hardware
+    - Tangible User Interfaces
+    - UX
+    - Design
+    - Mobile and Ubiquitous Computing
+
+patagonia:
+  title: Evaluation of Patagonia's Corporate Identity for Product Development
+  short_title: "Patagonia Corporate Identity"
+  description: |
+    "Strategic Design Language" is about understanding the strategic design process and learning how to translate the complex information gathered from the process into visual design language.  The class helps students build compelling stories from their ideas by creating design language that is spoken in today's design communities and business world.
+  course: ID6214 Strategic Design Language
+  date: December 2011
+  skills:
+    - Branding
+    - Identity
+    - Business Model Canvas
+    - Brand Positioning
+    - Competitive Landscapes
+    - Personas
+  roles:
+    - Individual Contributor
+  tags:
+    - Design
+    - Research
+
+martin-sprouse:
+  title: Product Designer for Martin Sprouse Furniture
+  short_title: "Martin Sprouse Furniture"
+  description: |
+    I had the amazing opportunity to work with Martin Sprouse — an extremely talented furniture designer in Emeryville. My role was to turn his concepts and ideas into detailed drawings for contractors and create renderings for clients. Below are a few pieces that I worked on.
+  client: Martin Sprouse Design
+  date: 2011
+  skills:
+    - Rendering
+    - CAD Software
+  roles:
+    - Product Designer
+  tags:
+    - Design
+
+pottery-barn:
+  title: Concept Development for Pottery Barn
+  short_title: "Pottery Barn"
+  description: |
+    Drawing inspiration from things around me (pre-Pinterest :)) and from current trends, concepts examined gaps in Pottery Barn's existing product catalogs. Shown below are inspiration boards, initial concepts, and final, more refined concepts.
+  client: Pottery Barn
+  date: 2011
+  skills:
+    - Concepting
+    - CAD Software
+  roles:
+    - Product Designer
+  tags:
+    - Design
+
+project-frog:
+  title: "Product Designer for Project Frog, Inc."
+  short_title: "Project Frog"
+  description: |
+    As a product design engineer at Project Frog, my role was to design and manage several major product lines.
+  client: Project Frog, Inc.
+  date: 2007
+  roles:
+    - Product Designer

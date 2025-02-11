@@ -1,0 +1,80 @@
+blurb: |
+  My name is Ceara Byrne and I'm a postdoctoral research fellow in the Traverso Lab at Massachusetts Institute of Technology. I received my PhD in Human Computer Interaction at Georgia Tech. I'm a designer and developer who believes in creating things around empathy before everything be it physical or digital. I use a data-driven approach to develop products that put people and their needs first. I have a masters in both Industrial Design (ID) and Human-Computer Interaction (HCI) from Georgia Tech.
+
+  I am a Computing Innovation (CI) fellow supported by the Computing Research Association (CRA) and the Computing Community Consortium (CCC) through NSF.
+
+  My PhD research focused on instrumenting dog toys with various sensors for measuring computational ethograms of behavior. With these computational ethograms we are better able to understand aspects of working dog temperament and behavior, and as funding for these centers mainly come from donations, programs can more efficiently use their funding to train more working dogs or create new programs that can benefit individuals with disabilities.
+
+story: |
+  Welcome to my website!
+
+  For the most part, this site will contain the work I've done in industry and in school.  For legal reasons, some of my professional work isn't shown, but I hope that what I can show reflects meaningful and thoughtful research and design.
+
+  It doesn't end there, however!  I'm a maker and hacker at heart and am immensely curious... about most things...  As a result, you'll also see personal projects and maybe one day I'll even post some tutorials on how I've managed to get things working on the blog.
+
+  I don't like having to write about myself, so here's what a friend and fellow UXer wrote:
+
+  <quote>Ceara is a designer who believes in the empathy before everything. Be it physical or digital, her products put the person and their needs first. She has a masters in both industrial design and human computer interaction from Georgia Tech. Ceara has designed both physical and digital products for fortune 500 companies and startups alike. These days she is working on wearable computing and plans to take over the world. When not working, she likes to bike, run, and enjoy the little things to the fullest.</quote>
+
+  I know, I know... it's a cop-out, but seriously, I love what I do and I try to do it well.  If you'd like to learn more, you can find my CV here.
+
+  <em>Currently looking for internships.</em>
+
+fields:
+  aci:
+    heading: Animal-Computer Interaction
+    description: |
+      I take a multi-pronged approach to data for ACI. Leveraging interviews with handlers, observation of handler/canine interactions and relationships, and by quantifying the canine interactions with their world, we can start to get a better understanding of how to design technology for animals.
+
+  bci:
+    heading: Brain-Computer Interfaces
+    description: |
+      Analysis and design go hand in hand. I have been experimenting with electrode design, placement within the ear, filters, and time frequency domain classifiers to improve signal-to-noise ratios and accuracy of classifying human attention in selection tasks.
+
+  wearable:
+    heading: Wearable Computing Interfaces
+    description: |
+      I have been working on a project that uses a wearable device to monitor the health of working dogs. The device is a harness that has a variety of sensors to monitor the dog's health and behavior. The data is then sent to a handler's phone to alert them of any changes in the dog's health.
+
+  behavior:
+    heading: Computational Animal Behavior Analysis
+    description: |
+      Non-human species are non-verbal, active or passive participants with technology. Quantifying the relationship between animals and their world, such as how they bite, the frequency of play interactions, etc, provides us insight into more effectively improving animal welfare on farms and in the home environments.
+
+domains:
+  research:
+    heading: Research
+    description: |
+      I conduct research to both answer questions and to create new questions. I've worked on behavioral research for both humans and on dogs.
+    link: ""
+    tags:
+      - Research
+
+  design:
+    heading: Design
+    description: |
+      I design products that are both functional and aesthetically pleasing. I have experience in designing for both humans and animals.
+    link: ""
+    tags:
+      - Design
+      - Architecture
+      - IoT
+      - Wearables
+
+  hardware:
+    heading: Hardware
+    description: |
+      I have experience in designing and building hardware for both humans and animals.
+    link: ""
+    tags:
+      - Prototyping Hardware
+
+  software:
+    heading: Software
+    description: |
+      I have experience in designing and building software for both humans and animals.
+    tags:
+      - Artificial Intelligence
+      - Machine Learning
+      - IoT
+      - Development

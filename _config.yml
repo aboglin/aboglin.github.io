@@ -1,7 +1,7 @@
-title: My Jekyll Site
-description: A blog created with Jekyll for GitHub Pages.
+title: Ceara Byrne
+description: Data-Driven Design.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourusername.github.io" # Replace with your GitHub Pages URL
+url: "https://cearabyrne.com" # Replace with your GitHub Pages URL
 markdown: kramdown
 theme: jekyll-theme-minimal
 # Additional configuration options can be added here.
