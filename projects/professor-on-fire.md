@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Professor on Fire"
+title: "Professor on Fire Shawl"
+short_title: "Professor on Fire"
 category: projects
 tags:
   - Wearables

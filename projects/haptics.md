@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "FIDO: Haptics"
+title: "FIDO: Haptics as a Communication Tool"
+short_title: "FIDO: Haptics"
 category: projects
 tags:
   - Design

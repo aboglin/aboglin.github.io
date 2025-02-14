@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Pottery Barn"
+title: "Concept Development for Pottery Barn"
+short_title: "Pottery Barn"
 category: projects
 tags:
   - Design

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Product Designer for Project Frog, Inc."
+short_title: "Project Frog"
 category: projects
 tags:
   - Design

@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Smart Building Energy Management"
+title: "Detecting Occupancy Patterns of Smart Buildings for Efficient Energy Management"
+short_title: "Smart Building Energy Management"
 category: projects
 tags:
   - Architecture

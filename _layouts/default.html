@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{{ page.short_title | default: page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
 <body>
   <header>
-    <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+    <h1><a href="{{ "/" | relative_url }}">{{ page.title | default: site.title }}</a></h1>
   </header>
   <main>
     {{ content }}

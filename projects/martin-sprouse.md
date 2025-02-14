@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Martin Sprouse Furniture"
+title: "Product Designer for Martin Sprouse Furniture"
+short_title: "Martin Sprouse Furniture"
 category: projects
 tags:
   - Design

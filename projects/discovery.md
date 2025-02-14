@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Situational and Contextually-Aware Discovery"
+title: "Situational and Contextually-Aware Discovery through Person to Person Mobile & Tangible Interactions"
+short_title: "Situational and Contextually-Aware Discovery"
 category: projects
 tags:
   - IoT
