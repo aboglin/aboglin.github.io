@@ -7,7 +7,15 @@
 </head>
 <body>
   <header>
-    <h1><a href="{{ "/" | relative_url }}">{{ page.title | default: site.title }}</a></h1>
+    <nav id="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/publications">Publications</a></li>
+      </ul>
+    </nav>
+    <h1>{{ page.title | default: site.title }}</h1>
+    <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
   </header>
   <main>
     {{ content }}
@@ -15,5 +23,11 @@
   <footer>
     <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      var header = document.querySelector('header');
+      header.classList.toggle('expanded');
+    });
+  </script>
 </body>
 </html>
