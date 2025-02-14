@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "FIDO: A Wearable Device for Working Dogs"
+title: "Predicting the Suitability of Working Dogs using Instrumented Dog Toys"
+short_title: "FIDO: Instrumented Dog Toys"
 category: projects
 tags:
   - Development

@@ -28,3 +28,11 @@ or check your network connection.)
   bundle install
 
 Following these steps should allow you to develop and deploy your Jekyll site using the supported Ruby 3.1.6 version.
+
+## Notes
+
+Next steps:
+
+* Styling to match old website
+* Setting up links between projects appropriately
+* Scrape old website for content

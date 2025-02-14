@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Solar System Bookshelf"
+title: "Solar System Sci-Fi Bookshelf"
+short_title: "Solar System Bookshelf"
 category: projects
 tags:
   - Front-End

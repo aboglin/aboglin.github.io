@@ -2,6 +2,10 @@
 layout: default
 title: "Agent J: An Architectural AI Agent"
 category: projects
+tags:
+  - Artificial Intelligence
+  - Cognitive Science
+  - Research
 ---
 
 {{ site.data.portfolio.agent-j.description }}
