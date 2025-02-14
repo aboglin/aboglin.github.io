@@ -18,6 +18,8 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  flex-wrap: wrap;
+  min-height: 3rem; /* Ensure a minimum height */
 }
 
 header.expanded {
@@ -91,10 +93,14 @@ h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  white-space: normal;
+  text-align: center;
+  max-width: 80%;
 }
 
 header.expanded h1 {
   position: static;
   transform: none;
   margin-top: 1rem;
+  max-width: 100%;
 }
