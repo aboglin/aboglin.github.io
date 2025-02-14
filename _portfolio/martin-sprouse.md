@@ -3,8 +3,6 @@ layout: default
 title: "Product Designer for Martin Sprouse Furniture"
 short_title: "Martin Sprouse Furniture"
 category: projects
-tags:
-  - Design
 ---
 
 {{ site.data.portfolio.martin-sprouse.description }}

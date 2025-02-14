@@ -3,14 +3,6 @@ layout: default
 title: "Predicting the Suitability of Working Dogs using Instrumented Dog Toys"
 short_title: "FIDO: Instrumented Dog Toys"
 category: projects
-tags:
-  - Development
-  - Design
-  - IoT
-  - Mobile and Ubiquitous Computing
-  - Protoyping Hardware
-  - Puppies!
-  - Tangible User Interfaces
 ---
 
 {{ site.data.portfolio.instrumented-dog-toys.description }}

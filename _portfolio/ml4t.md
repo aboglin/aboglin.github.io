@@ -2,8 +2,6 @@
 layout: default
 title: "Machine Learning for Trading"
 category: projects
-tags:
-  - Machine Learning
 ---
 
 {{ site.data.portfolio.ml4t.description }}

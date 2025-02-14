@@ -3,11 +3,6 @@ layout: default
 title: "FIDO: Haptics as a Communication Tool"
 short_title: "FIDO: Haptics"
 category: projects
-tags:
-  - Design
-  - Development
-  - Research
-  - Wearables
 ---
 
 {{ site.data.portfolio.haptics.description }}

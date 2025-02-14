@@ -11,6 +11,10 @@ solar-system-bookshelf:
     - HTML
     - CSS
     - JavaScript
+  tags:
+    - Front-End
+    - InfoVis
+    - UX
 
 hypothesis-generation:
   title: "Hypothesis Generation via Node-Link Diagrams"
@@ -22,6 +26,10 @@ hypothesis-generation:
     - JavaScript
     - HTML
     - CSS
+  tags:
+    - InfoVis
+    - UX
+    - Front-End
 
 instrumented-dog-toys:
   short_title: "FIDO: Instrumented Dog Toys"
@@ -37,6 +45,14 @@ instrumented-dog-toys:
     - Experimental Design
     - Machine Learning
     - Data Analysis
+  tags:
+    - Development
+    - Design
+    - IoT
+    - Mobile and Ubiquitous Computing
+    - Protoyping Hardware
+    - Puppies!
+    - Tangible User Interfaces
 
 agent-j:
   title: "Agent J: An Architectural AI Agent"
@@ -55,6 +71,10 @@ agent-j:
     - Project Lead
     - Qualitative Analysis
     - 5 person team
+  tags:
+    - Artificial Intelligence
+    - Cognitive Science
+    - Research
 
 ml4t:
   title: "Machine Learning for Trading"
@@ -74,6 +94,8 @@ ml4t:
   website: "http://quantsoftware.gatech.edu/Machine_Learning_for_Trading_Course"
   roles:
     - Individual Contributor
+  tags:
+    - Machine Learning
 
 professor-on-fire:
   title: "Professor on Fire Shawl"
@@ -91,6 +113,10 @@ professor-on-fire:
   roles:
     - Hardware
     - Software
+  tags:
+    - Wearables
+    - Development
+    - Protoyping Hardware
 
 dinosaurs:
   title: "Tangible Feedback and Sharing of Emotions through Soft Toy Dinosaurs"
@@ -109,6 +135,13 @@ dinosaurs:
     - Teensyduino
   roles:
     - Individual Contributor
+  tags:
+    - Development
+    - IoT
+    - Affective Computing
+    - Protoyping Hardware
+    - Tangible User Interfaces
+    - Design
 
 project-pilgrim:
   title: Project Pilgrim
@@ -127,6 +160,8 @@ project-pilgrim:
     - Android Dev
   roles:
     - Technical Intern
+  tags:
+    - IoT
 
 haptics:
   title: "FIDO: Haptics as a Communication Tool"
@@ -142,11 +177,15 @@ haptics:
     - Android Dev
   roles:
     - Individual Contributor
+  tags:
+    - Design
+    - Development
+    - Research
+    - Wearables
 
 ai-project:
   title: "Detecting Occupancy Patterns of Smart Buildings for Efficient Energy Management"
   short_title: "Smart Building Energy Management"
-  # TODO: Grab the citations that are referred to in the description text
   description: |
     In 2011, the US building sector accounted for 41% of the total energy consumed, outperforming the transportation and industrial sectors by 28% and 31%, respectively.* Prior studies show that occupancy pattern detection can reduce the energy consumption of lighting by 50% and air conditioning by 20%.** The prediction of occupancy patterns is particularly important in Heating Ventilation and Air Conditioning (HVAC) control systems because the process of reaching the appropriate temperature is time consuming and costly***, however, the current standard from the American Society of Heating Refrigerating & Air-conditioning Engineers (ASHRAE) is a fixed model assuming identical occupancy patterns across buildings with different uses (e.g. commercial, retail). The objective of this study was to develop an AI-based model that predicted the occupancy pattern of a commercial building (for e.g. Mitsubishi Electric Research Laboratory (MERL)) in order to anticipate the optimal temperature for the HVAC system one hour from the present. We then compare our model of occupancy patterns with current standards from ASHRAE and provide an analysis of energy savings by adopting this model.
   course: CS6601 Artificial Intelligence
@@ -155,6 +194,10 @@ ai-project:
     - MATLAB
     - Python
     - HMMs
+  tags:
+    - Architecture
+    - Artificial Intelligence
+    - Sustainability
 
 irl:
   title: "Chaining Dynamic Movement Primitives (DMPs) for Learning Complex Tasks from Demonstration"
@@ -172,6 +215,9 @@ irl:
   roles:
     - Code Contributor
     - 3 person team
+  tags:
+    - Machine Learning
+    - Development
 
 mit:
   title: "MIT Media Lab Member Connect App"
@@ -189,7 +235,6 @@ mit:
 discovery:
   title: "Situational and Contextually-Aware Discovery through Person to Person Mobile & Tangible Interactions"
   short_title: "Situational and Contextually-Aware Discovery"
-  # TODO: Grab the citations that are referred to in the description text
   description: |
     Within the past couple decades, particularly within the United States, populations have shifted from being extremely rural to being urbanized.* This unfamiliar and transient nature of our society often leaves a person experiencing a wide range of emotions as they move from one place to the next. As a greenhorn acquires information regarding their new surroundings and develops a routine rich in comfortable locations and experiences this turmoil subsides, but little innate guidance is provided for a new resident to cope with this highly personal process. Coarse knowledge of the culture of a neighborhood does not provide an easy introduction to the places or people within it. As a result, our problem space explores methods to address these issues post-relocation by considering the emotional, spatial, and social aspects associated with it.
   course: CS6750 Human Computer Interaction
@@ -204,6 +249,12 @@ discovery:
     - UX Lead
     - Physical Prototyping
     - Qualitative studies on a 3 person team
+  tags:
+    - IoT
+    - Mobile and Ubiquitous Computing
+    - Protoyping Hardware
+    - Tangible User Interfaces
+    - UX
 
 chi-ideation-sessions:
   title: "CHI Ideation Sessions: A Tool for Brainstorming"
@@ -220,7 +271,11 @@ chi-ideation-sessions:
     - Qualitative Coding
   roles:
     - UX Lead
-    - 2 person team with guidance from Dave Meeker
+    - 2 person team
+  tags:
+    - Design
+    - UX
+    - Protoyping Hardware
 
 etextile-research:
   title: "eTextile Knee Sleeve Research"
@@ -238,6 +293,8 @@ etextile-research:
     - Interviews
     - Observation
     - Participatory Design Workshop
+  tags:
+    - Research
 
 etextile:
   title: "eTextile Knee Sleeve"
@@ -251,6 +308,9 @@ etextile:
     - Prototyping
   roles:
     - Individual Contributor
+  tags:
+    - Wearables
+    - Protoyping Hardware
 
 conductive-ink-toolkit:
   title: "Development of a Conductive Ink Toolkit for Educational Purposes"
@@ -266,6 +326,13 @@ conductive-ink-toolkit:
   roles:
     - Project Lead
     - All Physical Prototyping
+  tags:
+    - Development
+    - Mobile and Ubiquitous Computing
+    - Protoyping Hardware
+    - Tangible User Interfaces
+    - UX
+    - Design
 
 patagonia:
   title: Evaluation of Patagonia's Corporate Identity for Product Development
@@ -283,6 +350,9 @@ patagonia:
     - Personas
   roles:
     - Individual Contributor
+  tags:
+    - Design
+    - Research
 
 martin-sprouse:
   title: Product Designer for Martin Sprouse Furniture
@@ -296,6 +366,8 @@ martin-sprouse:
     - CAD Software
   roles:
     - Product Designer
+  tags:
+    - Design
 
 pottery-barn:
   title: Concept Development for Pottery Barn
@@ -309,6 +381,8 @@ pottery-barn:
     - CAD Software
   roles:
     - Product Designer
+  tags:
+    - Design
 
 project-frog:
   title: "Product Designer for Project Frog, Inc."
@@ -319,3 +393,7 @@ project-frog:
   date: 2007
   roles:
     - Product Designer
+  tags:
+    - Design
+    - Architecture
+    - Sustainability

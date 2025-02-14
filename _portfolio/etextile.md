@@ -2,9 +2,6 @@
 layout: default
 title: "eTextile Knee Sleeve"
 category: projects
-tags:
-  - Wearables
-  - Protoyping Hardware
 ---
 
 {{ site.data.portfolio.etextile.description }}

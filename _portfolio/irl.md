@@ -3,9 +3,6 @@ layout: default
 title: "Chaining Dynamic Movement Primitives (DMPs) for Learning Complex Tasks from Demonstration"
 short_title: "Chaining DMPs for LfD"
 category: projects
-tags:
-  - Machine Learning
-  - Development
 ---
 
 {{ site.data.portfolio.irl.description }}
