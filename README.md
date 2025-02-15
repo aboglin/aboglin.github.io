@@ -33,6 +33,6 @@ Following these steps should allow you to develop and deploy your Jekyll site us
 
 Next steps:
 
+* Add contact information such as email, twitter, etc.
 * Styling to match old website
-* Setting up links between projects appropriately
 * Scrape old website for content
