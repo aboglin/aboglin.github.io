@@ -2,7 +2,6 @@
 layout: default
 title: "Concept Development for Pottery Barn"
 short_title: "Pottery Barn"
-category: projects
 ---
 
 {{ site.data.portfolio.pottery-barn.description }}

@@ -2,7 +2,6 @@
 layout: default
 title: "Tangible Feedback and Sharing of Emotions through Soft Toy Dinosaurs"
 short_title: "Affective Soft Toy Dinosaurs"
-category: projects
 ---
 
 {{ site.data.portfolio.dinosaurs.description }}

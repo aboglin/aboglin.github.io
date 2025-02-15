@@ -2,7 +2,6 @@
 layout: default
 title: "Predicting the Suitability of Working Dogs using Instrumented Dog Toys"
 short_title: "FIDO: Instrumented Dog Toys"
-category: projects
 ---
 
 {{ site.data.portfolio.instrumented-dog-toys.description }}

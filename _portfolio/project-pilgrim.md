@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Project Pilgrim"
-category: projects
 ---
 
 {{ site.data.portfolio.project-pilgrim.description }}

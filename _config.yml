@@ -7,5 +7,5 @@ theme: jekyll-theme-minimal
 # Additional configuration options can be added here.
 
 collections:
-  projects:
+  portfolio:
     output: true

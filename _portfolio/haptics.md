@@ -2,7 +2,6 @@
 layout: default
 title: "FIDO: Haptics as a Communication Tool"
 short_title: "FIDO: Haptics"
-category: projects
 ---
 
 {{ site.data.portfolio.haptics.description }}

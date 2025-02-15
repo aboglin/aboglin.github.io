@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "eTextile Knee Sleeve Research"
-category: projects
 ---
 
 {{ site.data.portfolio.etextile-research.description }}

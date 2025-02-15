@@ -2,7 +2,6 @@
 layout: default
 title: "Detecting Occupancy Patterns of Smart Buildings for Efficient Energy Management"
 short_title: "Smart Building Energy Management"
-category: projects
 ---
 
 {{ site.data.portfolio.ai-project.description }}

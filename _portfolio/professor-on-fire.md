@@ -2,7 +2,6 @@
 layout: default
 title: "Professor on Fire Shawl"
 short_title: "Professor on Fire"
-category: projects
 ---
 
 {{ site.data.portfolio.professor-on-fire.description }}

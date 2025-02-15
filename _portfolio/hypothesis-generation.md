@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Hypothesis Generation via Node-Link Diagrams"
-category: projects
 ---
 
 {{ site.data.portfolio.hypothesis-generation.description }}

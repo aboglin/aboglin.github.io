@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "eTextile Knee Sleeve"
-category: projects
 ---
 
 {{ site.data.portfolio.etextile.description }}

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Agent J: An Architectural AI Agent"
-category: projects
 ---
 
 {{ site.data.portfolio.agent-j.description }}

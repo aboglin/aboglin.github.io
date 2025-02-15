@@ -2,7 +2,6 @@
 layout: default
 title: "Solar System Sci-Fi Bookshelf"
 short_title: "Solar System Bookshelf"
-category: projects
 ---
 
 {{ site.data.portfolio.solar-system-bookshelf.description }}

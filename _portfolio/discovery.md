@@ -2,7 +2,6 @@
 layout: default
 title: "Situational and Contextually-Aware Discovery through Person to Person Mobile & Tangible Interactions"
 short_title: "Situational and Contextually-Aware Discovery"
-category: projects
 ---
 
 {{ site.data.portfolio.discovery.description }}
