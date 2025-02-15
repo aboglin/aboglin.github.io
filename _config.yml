@@ -11,3 +11,5 @@ collections:
     output: true
   domains:
     output: true
+
+exclude: [CNAME, README.md]
