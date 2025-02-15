@@ -5,7 +5,14 @@ title: Ceara Byrne
 
 <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
 
-<div>{{ site.data.about.blurb | markdownify }}</div>
+<div class="about-container">
+  <div class="about-text">
+    {{ site.data.about.blurb | markdownify }}
+  </div>
+  <div class="about-image">
+    <img src="{{ "/assets/img/cearamainimg.png" | relative_url }}" alt="Ceara Byrne">
+  </div>
+</div>
 
 <ul class="horizontal-list">
   {% for field in site.data.about.fields %}
