@@ -1,0 +1,29 @@
+---
+layout: default
+title: Ceara Byrne
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
+
+<div>{{ site.data.about.blurb | markdownify }}</div>
+
+<ul class="horizontal-list">
+  {% for field in site.data.about.fields %}
+    <li>
+        <h3>{{ field[1].heading }}</h3>
+        <div>{{ field[1].description | markdownify }}</div>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>Data-Driven Design</h2>
+
+<ul class="vertical-list">
+  {% for domain in site.data.about.domains %}
+    <li>
+        <h3><a href="/domains/{{ domain[0] }}">{{ domain[1].heading }}</a></h3>
+        <div>{{ domain[1].description | markdownify }}</div>
+    </li>
+  {% endfor %}
+</ul>
+

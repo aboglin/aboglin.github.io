@@ -9,3 +9,5 @@ theme: jekyll-theme-minimal
 collections:
   portfolio:
     output: true
+  domains:
+    output: true

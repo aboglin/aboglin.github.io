@@ -46,7 +46,6 @@ domains:
     heading: Research
     description: |
       I conduct research to both answer questions and to create new questions. I've worked on behavioral research for both humans and on dogs.
-    link: ""
     tags:
       - Research
 
@@ -54,7 +53,6 @@ domains:
     heading: Design
     description: |
       I design products that are both functional and aesthetically pleasing. I have experience in designing for both humans and animals.
-    link: ""
     tags:
       - Design
       - Architecture
@@ -65,7 +63,6 @@ domains:
     heading: Hardware
     description: |
       I have experience in designing and building hardware for both humans and animals.
-    link: ""
     tags:
       - Prototyping Hardware
 

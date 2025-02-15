@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="{{ "/assets/css/portfolio_filter.css" | relative_url }}">
+
+<button id="tag-nav-toggle" aria-label="Toggle navigation">
+  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
+    <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+  </svg>
+</button>
+
+<div class="container">
+  <div id="tag-navbar" class="sidebar">
+    <button onclick="filterProjects('all')">All</button>
+    {% for tag in all_tags %}
+      {% if tag != "" %}
+        <button onclick="filterProjects('{{ tag }}')">{{ tag }}</button>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="content">
+    <ul id="project-list">
+      {% for project in site.portfolio %}
+        {% assign url = project.id | relative_url %}
+        {% assign portfolio = site.data.portfolio[project.slug] %}
+        {% if portfolio == nil %}
+          {% continue %}
+        {% endif %}
+        {% assign has_tag = false %}
+        {% for tag in portfolio.tags %}
+          {% if all_tags contains tag %}
+            {% assign has_tag = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if has_tag == false %}
+          {% continue %}
+        {% endif %}
+        <li class="project-item" data-tags="{{ portfolio.tags | join: ' ' }}">
+          <a href="{{ url }}">{{ portfolio.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<script>
+  document.getElementById('tag-nav-toggle').addEventListener('click', function() {
+    var sidebar = document.querySelector('.sidebar');
+    if (sidebar.style.display === 'block') {
+      sidebar.style.display = 'none';
+    } else {
+      sidebar.style.display = 'block';
+    }
+  });
+
+  function filterProjects(tag) {
+    var items = document.querySelectorAll('.project-item');
+    items.forEach(function(item) {
+      if (tag === 'all' || item.getAttribute('data-tags').includes(tag)) {
+        item.style.display = 'list-item';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+</script>
