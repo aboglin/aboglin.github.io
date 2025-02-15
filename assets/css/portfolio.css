@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure the sidebar and content are side-by-side */
+}
+
+.sidebar {
+  flex: 0 0 20%; /* Fixed width for the sidebar */
+  max-width: 20%;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+.content {
+  flex: 1; /* Take the remaining space */
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-wrap: wrap; /* Allow the sidebar and content to stack */
+  }
+
+  .sidebar {
+    display: none;
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .content {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  #tag-nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #333;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  #tag-nav-toggle {
+    display: none;
+  }
+}
+
+#tag-nav-toggle {
+  cursor: pointer;
+}
+
+#tag-navbar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+}
+
+#tag-navbar button:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+}
