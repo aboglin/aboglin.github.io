@@ -1,3 +1,44 @@
+
+:root {
+  /* Core Colors */
+  --color-background: #F9FAFB;
+  --color-text: #1E293B;
+  --color-primary: #0F766E;   /* Deep Teal */
+  --color-secondary: #1E3A8A; /* Rich Navy */
+  --color-accent: #06B6D4;    /* Vibrant Cyan */
+  --color-highlight: #F97316; /* Coral Glow */
+
+  /* Alert Colors */
+  --color-success: #10B981;
+  --color-warning: var(--color-highlight);
+  --color-error: #DC2626;
+
+  /* Neutrals */
+  --color-gray-light: #E5E7EB;
+  --color-gray-medium: #CBD5E1;
+  --color-gray-dark: #475569;
+
+  /* Typography */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  /* Header title color for improved contrast */
+  --color-header-title: #ffffff;
+  /* Header/navigation link color for contrast */
+  --color-nav-link: #ffffff;
+}
+
 .horizontal-list {
   list-style: none;
   padding: 0;
@@ -58,3 +99,43 @@
     display: none;
   }
 }
+
+.field-description {
+  text-align: justify;
+}
+.horizontal-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+.horizontal-list-row {
+  width: 100%;
+}
+.horizontal-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5em 0;
+}
+.horizontal-list li {
+  flex: 1 1 0;
+  margin: 0 1em;
+  min-width: 0;
+}
+.horizontal-list li h3 {
+  margin-top: 0;
+}
+/* Add background color for the section */
+.section-bg {
+  background-color: #262156;
+  padding: 2em 1em 2em 1em;
+  border-radius: 12px;
+  color: #fff;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+</style>

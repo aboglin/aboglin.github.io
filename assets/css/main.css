@@ -1,14 +1,55 @@
+
+:root {
+  /* Core Colors */
+  --color-background: #F9FAFB;
+  --color-text: #1E293B;
+  --color-primary: #0F766E;   /* Deep Teal */
+  --color-secondary: #1E3A8A; /* Rich Navy */
+  --color-accent: #06B6D4;    /* Vibrant Cyan */
+  --color-highlight: #F97316; /* Coral Glow */
+
+  /* Alert Colors */
+  --color-success: #10B981;
+  --color-warning: var(--color-highlight);
+  --color-error: #DC2626;
+
+  /* Neutrals */
+  --color-gray-light: #E5E7EB;
+  --color-gray-medium: #CBD5E1;
+  --color-gray-dark: #475569;
+
+  /* Typography */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  /* Header title color for improved contrast */
+  --color-header-title: #ffffff;
+  /* Header/navigation link color for contrast */
+  --color-nav-link: #ffffff;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #f4f4f4;
+  background: var(--color-gray-light);
 }
 
 header, footer {
-  background: #333;
-  color: #fff;
+  background: var(--color-gray-dark);
+  color: var(--color-white);
   padding: 1rem 0;
   text-align: center;
 }
@@ -32,7 +73,7 @@ main {
 }
 
 a {
-  color: #3498db;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -52,12 +93,18 @@ nav ul li a {
   color: inherit;
 }
 
+/* Ensure header/nav links have strong contrast against the banner */
+header nav ul li a,
+header nav a {
+  color: var(--color-nav-link);
+}
+
 #nav-toggle {
   display: none;
   background: none;
   border: none;
   font-size: 1.5em;
-  color: #fff;
+  color: var(--color-white);
 }
 
 @media (max-width: 600px) {
@@ -76,15 +123,15 @@ nav ul li a {
 }
 
 .section-one {
-  background: #ff6347; /* Tomato */
-  color: #fff;
+  background: var(--color-accent); /* Accent */
+  color: var(--color-white);
   padding: 2rem;
   width: 100%;
 }
 
 .section-two {
-  background: #4682b4; /* SteelBlue */
-  color: #fff;
+  background: var(--color-secondary); /* Secondary */
+  color: var(--color-white);
   padding: 2rem;
   width: 100%;
 }
@@ -96,6 +143,7 @@ h1 {
   white-space: normal;
   text-align: center;
   max-width: 80%;
+  color: var(--color-header-title);
 }
 
 header.expanded h1 {
@@ -103,4 +151,24 @@ header.expanded h1 {
   transform: none;
   margin-top: 1rem;
   max-width: 100%;
+}
+
+/* Hero section using design tokens */
+.hero {
+  background: linear-gradient(135deg, var(--color-background) 0%, #F3F4F6 100%);
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero p {
+  color: var(--color-gray-dark);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-lg);
 }

@@ -1,3 +1,44 @@
+
+:root {
+  /* Core Colors */
+  --color-background: #F9FAFB;
+  --color-text: #1E293B;
+  --color-primary: #0F766E;   /* Deep Teal */
+  --color-secondary: #1E3A8A; /* Rich Navy */
+  --color-accent: #06B6D4;    /* Vibrant Cyan */
+  --color-highlight: #F97316; /* Coral Glow */
+
+  /* Alert Colors */
+  --color-success: #10B981;
+  --color-warning: var(--color-highlight);
+  --color-error: #DC2626;
+
+  /* Neutrals */
+  --color-gray-light: #E5E7EB;
+  --color-gray-medium: #CBD5E1;
+  --color-gray-dark: #475569;
+
+  /* Typography */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  /* Header title color for improved contrast */
+  --color-header-title: #ffffff;
+  /* Header/navigation link color for contrast */
+  --color-nav-link: #ffffff;
+}
+
 .container {
   display: flex;
   flex-wrap: nowrap; /* Ensure the sidebar and content are side-by-side */
@@ -7,7 +48,7 @@
   flex: 0 0 20%; /* Fixed width for the sidebar */
   max-width: 20%;
   padding: 1rem;
-  background-color: #f4f4f4;
+  background-color: var(--color-gray-light);
 }
 
 .content {
@@ -37,7 +78,7 @@
     background: none;
     border: none;
     font-size: 1.5em;
-    color: #333;
+  color: var(--color-gray-dark);
     margin: 1rem;
   }
 }
@@ -57,12 +98,12 @@
   width: 100%;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-  background-color: #3498db;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
   border: none;
 }
 
 #tag-navbar button:hover {
-  background-color: #2980b9;
+  background-color: var(--color-primary-dark);
   cursor: pointer;
 }
