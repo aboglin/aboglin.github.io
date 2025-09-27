@@ -14,35 +14,20 @@ title: Ceara Byrne
   </div>
 </div>
 
-<div style="height: 2em;"></div>
+<div class="spacer"></div>
 
-<div class="horizontal-list-wrapper"></div>
-<div class="section-bg horizontal-list-wrapper">
+<section class="section-bg">
   <h2 class="section-title">Fields of Expertise</h2>
 
-  <div class="horizontal-list-row">
-    <ul class="horizontal-list">
-      {% for field in site.data.about.fields limit:3 %}
-        <li>
-          <h3>{{ field[1].heading }}</h3>
-          <div class="field-description">{{ field[1].description | markdownify }}</div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="horizontal-list-row">
-    <ul class="horizontal-list">
-      {% for field in site.data.about.fields offset:3 limit:3 %}
-        <li>
-          <h3>{{ field[1].heading }}</h3>
-          <div class="field-description">{{ field[1].description | markdownify }}</div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-<style>
-</style>
+  <ul class="fields-grid">
+    {% for field in site.data.about.fields %}
+      <li class="field-item">
+        <h3>{{ field[1].heading }}</h3>
+        <div class="field-description">{{ field[1].description | markdownify }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
 
 <h2>Data-Driven Design</h2>
 

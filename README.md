@@ -14,12 +14,12 @@ This is a Jekyll site set up for deployment on GitHub Pages.
 
 ## Ruby Version Compatibility
 
-This project is configured to run with Ruby 3.1.6 for compatibility with the required version of the github-pages gem (~> 228). If your system’s default Ruby is 3.3.6 (or another version) you may encounter issues. To ensure you’re using the correct Ruby version:
+This project is configured to run with Ruby 3.3.6:
 
 • If you are using rbenv, run:
-  rbenv local 3.1.6
+  rbenv install
 
-• Make sure your system has Ruby 3.1.6 installed. (If the installation via rbenv times out, consider updating your ruby-build plugin with:
+• Make sure your system has Ruby 3.3.6 installed. (If the installation via rbenv times out, consider updating your ruby-build plugin with:
   brew update && brew upgrade ruby-build
 or check your network connection.)
 
@@ -27,7 +27,7 @@ or check your network connection.)
   gem install bundler
   bundle install
 
-Following these steps should allow you to develop and deploy your Jekyll site using the supported Ruby 3.1.6 version.
+Following these steps should allow you to develop and deploy your Jekyll site using the supported Ruby version.
 
 ## Notes
 
