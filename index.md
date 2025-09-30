@@ -1,0 +1,75 @@
+---
+---
+
+# Introduction
+Specializing in adaptive human-animal interfaces and ingestible biosensors, I engineer real-time systems that decode latent physiological and behavioral states using tools, such as machine learning, computer vision, and ultra-low-power embedded design.
+
+# About Me
+With an early research foundation in accessibility, I began my journey in [Dr. Stephen Sprigle's lab](https://cidi.gatech.edu/about), where I contributed to advancements in inclusive technology design. Later, my interests in wearable technology grew under the mentorship of [Thad Starner](https://www.cc.gatech.edu/people/thad-starner) and [Clint Zeagler](https://www.clintzeagler.com/), focusing on human-centered, innovative device integration.
+
+I went on to pursue a PhD in Computer Science specializing in Animal Computer Interaction, guided by [Melody Jackson](http://cc.gatech.edu/people/melody-jackson) and Thad Starner, where my biobehavioral research revealed how patterns of interaction with dog toys could serve as indicators for job suitability in working dogs. This work integrated behavioral analysis and engineering to bridge the gap between animal needs and technological solutions.
+
+Currently, I am part of [Dr. Gio Traverso’s team](https://www.l4te.org/dipl-team-member/giovanni-traverso/), developing ingestible capsule technologies designed to capture latent behaviors. My recent projects harness computer vision, continual learning, and ultra-low-power signal processing to engineer effective closed-loop ingestible devices, with a focus on enhancing data-driven personalization and clinical impact.
+
+# Research
+
+## Biobehavior
+My research develops technology-driven methods to objectively assess behavior and suitablity, using sensors and computer vision to improve welfare, efficiency, and selection processes across species. My work has integrated biobehavioral analysis and engineering to objectively identify job suitability in working dogs, which leverages sensor-equipped toys to quantify interaction patterns. By measuring behaviors such as bite duration and frequency, this approach uncovers data-driven indicators of temperament and aptitude that improve selection processes for service roles. Such methodologies move beyond subjective assessment, bridging animal needs and technological solutions to support more efficient, ethical, and transparent working dog placement. In parallel, I employ computer vision to monitor swine behaviors before, during, and after the use of ingestible devices, quantifying behavioral changes to rigorously assess device impact, such as satiety modulation from vibrating capsules—bridging animal needs and technological solutions across species.
+
+Why is it important?
+Biobehavior is essential because it helps reveal how biological processes, such as genetics, hormones, and neural activity, interact with behavior to shape both health and disease in humans and animals. This research provides insights into the causes of mental and physical disorders, improves early diagnosis, and enables the development of targeted interventions and treatments. By understanding and modeling biobehavioral patterns, scientists can also predict outcomes, optimize care strategies, and design technologies that adapt to an individual’s biological and behavioral needs across clinical, veterinary, and research settings.
+
+Relevant Publications:
+
+- __Byrne, C.__, Zuerndorfer, J., Freil, L., Han, X., Sirolly, A., Gilliland, S., Starner, T., & Jackson, M. (2018). Predicting the Suitability of Service Animals Using Instrumented Dog Toys. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 1(4), 127.
+- __Byrne, C.__, Starner, T., & Jackson, M. (2022). Quantifying canine interactions with smart toys assesses suitability for service dog work. Frontiers in Veterinary Science, 9, 886941.
+- Srinivasan, S,. Alshareef, A., Hwang, A,. __Byrne, C.__, Kuosmann, J., Ishida, K., Jenkins, J., Liu, S., Madani, W., Hayward, A., Fabian, N., Traverso, G.  (2023). A vibrating ingestible bioelectronic stimulator modulates gastric stretch receptors for illusory satiety. Science Advances, 9(51), eadj3003.
+
+## Ingestible and Implantable Devices
+I engineer ingestible and implantable devices for probing the gut-brain axis. This work requires integrating miniaturized sensors, stimulators, and wireless communication modules into biocompatible platforms that can withstand the harsh gastrointestinal environment. My work has incorporated multimodal sensing, such as motility or physiological signals. It has focused on delivering targeted neuromodulation through electrical or mechanostimulatory actuation to modulate enteric neural activity. Implantable systems, particularly those interfacing with the enteric nervous system, must achieve stable, low-noise signal acquisition while minimizing tissue irritation and ensuring long-term reliability. Coupling these peripheral devices with electrophysiological monitoring of brain signals, such as cortical or vagal recordings, enables bidirectional feedback loops that capture correlations between gut events and central neural responses. Advanced computational pipelines, including real-time signal processing, feature extraction, and closed-loop control algorithms, allow these systems to dynamically adjust stimulation parameters based on detected neural or behavioral states. Together, this convergence of biomedical engineering and neurogastroenterology provides a pathway to mechanistically decode gut-brain communication and design targeted interventions for disorders like irritable bowel syndrome, obesity, and functional dyspepsia.
+
+Why is it important?
+This convergence of biomedical engineering and neurogastroenterology provides a pathway to mechanistically decode gut-brain communication and design targeted interventions for disorders like irritable bowel syndrome, obesity, and functional dyspepsia. This work matters because it enables precise, objective insights into the complex communication between the gut and brain, ultimately uncovering how gastrointestinal activity influences neural function and health, improving patient outcomes through personalized and mechanistically-informed interventions.
+
+Relevant Publications:
+
+- McRae, J., Jaffe, E., Ballinger, I., Gierlach, A., __Byrne, C.__, Lowell, A., Ford, R., Martinet, V., Nguyen, T., Levering, V., Kang, Z., Herrera, S., Jenkins, J., Pettinari, A., Guevara, A., Fabian, N., Hayward, A., Laken, S., Jimenez, M., Traverso, G. _Ingestible Ultralong Gastric Residency Platform with Wirelessly-Triggered Disassembly for Continuous Monitoring._ Science Translational Medicine. (Under Review).
+- Srinivasan, S,. Alshareef, A., Hwang, A,. __Byrne, C.__, Kuosmann, J., Ishida, K., Jenkins, J., Liu, S., Madani, W., Hayward, A., Fabian, N., Traverso, G.  (2023). _A vibrating ingestible bioelectronic stimulator modulates gastric stretch receptors for illusory satiety._ Science Advances, 9(51), eadj3003.
+
+## Wearable Computing
+My research also sits at the intersection of user-centered design, behavioral analysis, and wearable technology, advancing both human-device and animal-computer interaction. From developing tactile and two-way communication systems for working dogs to designing user-informed eTextile rehabilitation devices, a core theme is the creation of accessible, embedded systems that enable nonverbal, bidirectional communication and are evaluated through robust behavioral and user-focused methods. This translational approach bridges laboratory innovation and practical deployment, ensuring that both animal and human end users are meaningfully integrated into the technological design process.
+
+Why is it important?
+Wearable computing is important because it enables real-time, continuous monitoring of physiological, behavioral, and environmental data, providing valuable insights that can improve health, safety, and quality of life. Wearable devices empower early detection of diseases, personalized interventions, and proactive healthcare by capturing data outside traditional clinical settings. Additionally, research in wearable computing advances the development of adaptive technologies for rehabilitation, sports performance, animal monitoring, and workplace safety, supporting both individual and population-level outcomes.
+
+Relevant Publications:
+
+- __Byrne, C.__*, Li, J.*, Liang, J.*, Lee, S., Kronborg Lyhne, M., Meng, A., Ling, S., Shiyi Li, Lopes, A., Khosravi, P., Cotter, C.,  Su, Y., Fels, J., Coffey, J.W., Hayward, A., Vegge, A., Rahbek, U., Buckley, S., Langer, R., Traverso, G.. (2025) Kinetics of Hypoglycemia in Diabetes Patients Informs Development of New Modes of Glucagon Therapy. (In Submission).
+- __Byrne, C.__, Freil, L., Starner, T., & Jackson, M. M. (2017). A method to evaluate haptic interfaces for working dogs. International Journal of Human-Computer Studies, 98, 196-207.
+- __Byrne, C.__, Kerwin, R., Zuerndorfer, J., Gilliland, S., Guo, Z., Jackson, M., & Starner, T. E. (2014). Two-way communication between working dogs and their handlers. IEEE Pervasive Computing, 13(2), 80-83.
+
+
+## Building out the Field of Animal-Computer Interaction
+My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science to engineer technologies that support meaningful multispecies integration. Through the development of sensing systems, ingestible devices, and interactive environments, I create new tools and frameworks that enable richer communication and data sharing between humans and animals in diverse contexts, from farming and laboratory research to home and clinical care. This work aims to forge deeper, bidirectional relationships, advancing our understanding of animal agency while expanding the possibilities for multispecies collaboration and shared experiences.
+
+Why is it important?
+Animal-Computer Interaction unlocks novel opportunities for multispecies research, enables the ethical integration of animals as active participants in science, and offers powerful new tools for both basic and applied investigation. By adopting technologies that foster richer communication and agency for animals, institutions can broaden their impact in fields like biomedical engineering, behavioral science, agriculture, and collaborative technology design—opening doors to discoveries that would be impossible through human-centered research alone. Furthermore, this approach aligns with growing societal and regulatory interest in animal welfare and interspecies ethics, positioning a research institution as a leader at the frontier of responsible, innovative research.
+
+Relevant publications:
+
+- __Byrne, C.__ _Engaging Non-Human Species in Using Technologies: Strategies for Acclimation, Training, and Autonomous Use of Technology_. Computing Technology, Animal Welfare and Human-Animal Relations. (Under review).
+- __Byrne, C.__, & Logas, J. (2021). _The future of technology and computers in veterinary medicine_. Diagnostics and Therapy in Veterinary Dermatology, 245-250.
+- Freil, L., __Byrne, C.__, Valentin, G., Zeagler, C., Roberts, D., Starner, T., & Jackson, M. (2017). _Canine-Centered Computing_. Foundations and Trends® in Human–Computer Interaction, 10(2), 87-164.
+
+# Teaching
+My background in computer science (CS), human computer interaction (HCI), and industrial design (ID) has shaped my teaching and advising philosophy in three critical ways. A fundamental element in design is the ability to effectively and constructively critique work in a way that enables students to take action on their projects and their work. Secondly, Georgia Tech's HCI program has taught me how to "fail early, fail often, fail intelligently," ensuring that you fail in a way that cultivates adaptation and innovation. In other words, small, strategic proof-of-concepts go a long way to help make a project successful. Lastly, bridging the two fields of CS and design has taught me the importance of grounding difficult concepts to accessible topics for reflection. Asking questions, such as "how does data collection impact design?" or "would a spectrogram be a better representation for this data?" allow students to understand how each part of the process fits within the whole.
+
+I have been the instructor-on-record for three undergraduate human-computer interaction courses and, notably, one of those classes was conducted during the academic year at the beginning of the COVID pandemic (Spring 2020). Additionally, I have been a teaching assistant in several courses on mobile and ubiquitous computing, on human-computer interaction, and on design while at Georgia Tech.
+
+# Mentorship
+One priority of my postdoctoral fellowship has been to be a more effective mentor. During the past two years, I have mentored 6 students across varying levels of academic expertise, from undergraduate to PhD. As a mentor, my goal is to not only effectively direct those in my charge, but also ensure they have the skills and confidence to accomplish their own goals in the future. My advising approach has increasingly turned to “teach people how to fail with recovery in mind”, or “fail early, fail often, fail intelligently”. Failure is okay and expected. How and how quickly one recovers from failure is what makes an effective researcher. Designing experiments to productively allow one to reflect on outcomes and pivot correctly is important. I find that mentoring is more about helping others be successful than providing them with the clearest way forward. Sometimes that can mean taking a step back and letting the students work things out for themselves, while for others it means being in the trenches and supporting them every step of the way. Mentoring requires the humility to know that there isn’t one right path. 
+
+My mentees have gone on to a variety of professions. Many work in industry, however, notably several have continued within academia. Three have continued beyond their undergraduate degrees to complete their Masters degrees at Northeastern University, University of Washington, and Harvard University. Two have applied to PhD, one of which continued into a PhD program at EPFL, studying nanorobotics.
+
+# Relevant Service
+From 2023 to 2025, I served on the steering committee for the International Conference on Animal-Computer Interaction, helping to guide the strategic direction of this interdisciplinary community and ensure the conference’s continued impact and growth. During this time, I took on major leadership roles, acting as program co-chair for the 2023 and 2024 conferences, where I coordinated the review process, curated the technical program, and supported high-quality scholarship. Most recently, in 2025, I am serving as Emerging Work Program co-chair, leading the integration of novel and cross-cutting research into the ACI field.
