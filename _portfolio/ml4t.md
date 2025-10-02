@@ -3,6 +3,8 @@ layout: default
 title: "Machine Learning for Trading"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.ml4t.description }}
 
 **Date:** {{ site.data.portfolio.ml4t.date }}

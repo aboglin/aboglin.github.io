@@ -4,6 +4,8 @@ title: "Product Designer for Project Frog, Inc."
 short_title: "Project Frog"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.project-frog.description }}
 
 **Date:** {{ site.data.portfolio.project-frog.date }}

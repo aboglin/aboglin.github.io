@@ -4,6 +4,8 @@ title: "Chaining Dynamic Movement Primitives (DMPs) for Learning Complex Tasks f
 short_title: "Chaining DMPs for LfD"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.irl.description }}
 
 **Date:** {{ site.data.portfolio.irl.date }}

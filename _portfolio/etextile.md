@@ -3,6 +3,8 @@ layout: default
 title: "eTextile Knee Sleeve"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.etextile.description }}
 
 **Date:** {{ site.data.portfolio.etextile.date }}

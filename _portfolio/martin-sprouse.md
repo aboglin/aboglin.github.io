@@ -4,6 +4,8 @@ title: "Product Designer for Martin Sprouse Furniture"
 short_title: "Martin Sprouse Furniture"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.martin-sprouse.description }}
 
 **Date:** {{ site.data.portfolio.martin-sprouse.date }}

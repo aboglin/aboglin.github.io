@@ -4,6 +4,8 @@ title: "Detecting Occupancy Patterns of Smart Buildings for Efficient Energy Man
 short_title: "Smart Building Energy Management"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.ai-project.description }}
 
 **Date:** {{ site.data.portfolio.ai-project.date }}

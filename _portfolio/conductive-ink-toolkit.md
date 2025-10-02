@@ -4,6 +4,8 @@ title: "Development of a Conductive Ink Toolkit for Educational Purposes"
 short_title: "Conductive Ink Toolkit"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.conductive-ink-toolkit.description }}
 
 **Date:** {{ site.data.portfolio.conductive-ink-toolkit.date }}

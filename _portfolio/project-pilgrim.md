@@ -3,6 +3,8 @@ layout: default
 title: "Project Pilgrim"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.project-pilgrim.description }}
 
 **Date:** {{ site.data.portfolio.project-pilgrim.date }}

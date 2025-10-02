@@ -3,6 +3,8 @@ title: Portfolio
 layout: default
 ---
 
+<h1>{{ page.title }}</h1>
+
 {% assign all_tags = "" %}
 {% for project in site.data.portfolio %}
   {% for tag in project[1].tags %}

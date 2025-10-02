@@ -3,6 +3,8 @@ layout: default
 title: "Training Working Dogs to Drive Robots through a Simple Maze"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.dog-robots.description }}
 
 **Date:** {{ site.data.portfolio.dog-robots.date }}

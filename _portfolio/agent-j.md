@@ -3,6 +3,8 @@ layout: default
 title: "Agent J: An Architectural AI Agent"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.agent-j.description }}
 
 **Date:** {{ site.data.portfolio.agent-j.date }}

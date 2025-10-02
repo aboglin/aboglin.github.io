@@ -4,6 +4,8 @@ title: "Professor on Fire Shawl"
 short_title: "Professor on Fire"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.professor-on-fire.description }}
 
 **Date:** {{ site.data.portfolio.professor-on-fire.date }}

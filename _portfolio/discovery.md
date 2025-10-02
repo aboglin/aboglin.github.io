@@ -4,6 +4,8 @@ title: "Situational and Contextually-Aware Discovery through Person to Person Mo
 short_title: "Situational and Contextually-Aware Discovery"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.discovery.description }}
 
 **Date:** {{ site.data.portfolio.discovery.date }}

@@ -3,6 +3,8 @@ layout: default
 title: "Hypothesis Generation via Node-Link Diagrams"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.hypothesis-generation.description }}
 
 **Date:** {{ site.data.portfolio.hypothesis-generation.date }}

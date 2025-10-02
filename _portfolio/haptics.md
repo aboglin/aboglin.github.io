@@ -4,6 +4,8 @@ title: "FIDO: Haptics as a Communication Tool"
 short_title: "FIDO: Haptics"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.haptics.description }}
 
 **Date:** {{ site.data.portfolio.haptics.date }}

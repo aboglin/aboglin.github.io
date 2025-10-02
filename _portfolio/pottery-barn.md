@@ -4,6 +4,8 @@ title: "Concept Development for Pottery Barn"
 short_title: "Pottery Barn"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.pottery-barn.description }}
 
 **Date:** {{ site.data.portfolio.pottery-barn.date }}

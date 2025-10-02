@@ -4,6 +4,8 @@ title: "Tangible Feedback and Sharing of Emotions through Soft Toy Dinosaurs"
 short_title: "Affective Soft Toy Dinosaurs"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.dinosaurs.description }}
 
 **Date:** {{ site.data.portfolio.dinosaurs.date }}

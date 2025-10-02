@@ -4,6 +4,8 @@ title: "CHI Ideation Sessions: A Tool for Brainstorming"
 short_title: "CHI Ideation Sessions"
 ---
 
+# {{ page.title }}
+
 {{ site.data.portfolio.chi-ideation-sessions.description }}
 
 **Date:** {{ site.data.portfolio.chi-ideation-sessions.date }}
