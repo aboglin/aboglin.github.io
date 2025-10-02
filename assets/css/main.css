@@ -1,7 +1,6 @@
-
 :root {
   /* Core Colors */
-  --color-background: #F9FAFB;
+  --color-background: #F7F7F7;
   --color-text: #1E293B;
   --color-primary: #0F766E;   /* Deep Teal */
   --color-secondary: #1E3A8A; /* Rich Navy */
@@ -16,7 +15,7 @@
   /* Neutrals */
   --color-gray-light: #E5E7EB;
   --color-gray-medium: #CBD5E1;
-  --color-gray-dark: #475569;
+  --color-gray-dark: #2E2E2E;
 
   /* Typography */
   --font-heading: 'Montserrat', sans-serif;
@@ -39,17 +38,19 @@
   --color-nav-link: #ffffff;
 }
 
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: var(--color-gray-light);
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 header, footer {
   background: var(--color-gray-dark);
-  color: var(--color-white);
+  color: var(--color-header-title);
   padding: 1rem 0;
   text-align: center;
 }
@@ -107,7 +108,7 @@ header nav a {
   color: var(--color-white);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   nav {
     display: none;
   }
@@ -122,27 +123,13 @@ header nav a {
   }
 }
 
-.section-one {
-  background: var(--color-accent); /* Accent */
-  color: var(--color-white);
-  padding: 2rem;
-  width: 100%;
-}
-
-.section-two {
-  background: var(--color-secondary); /* Secondary */
-  color: var(--color-white);
-  padding: 2rem;
-  width: 100%;
-}
 
 h1 {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 2rem;
   white-space: normal;
-  text-align: center;
-  max-width: 80%;
+  text-align: right;
+  max-width: 40%;
   color: var(--color-header-title);
 }
 
@@ -151,24 +138,4 @@ header.expanded h1 {
   transform: none;
   margin-top: 1rem;
   max-width: 100%;
-}
-
-/* Hero section using design tokens */
-.hero {
-  background: linear-gradient(135deg, var(--color-background) 0%, #F3F4F6 100%);
-  text-align: center;
-  padding: var(--spacing-xl) var(--spacing-md);
-}
-
-.hero h1 {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  color: var(--color-text);
-  margin-bottom: var(--spacing-md);
-}
-
-.hero p {
-  color: var(--color-gray-dark);
-  max-width: 600px;
-  margin: 0 auto var(--spacing-lg);
 }

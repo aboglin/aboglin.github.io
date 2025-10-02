@@ -10,19 +10,18 @@
     <nav id="navbar">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="https://scholar.google.com/citations?user=1K9COTYAAAAJ&hl=en" target="_blank">Publications</a></li>
         <li><a href="/pdf/CV_cbyrne.pdf">CV</a></li>
+        <li><a href="https://scholar.google.com/citations?user=1K9COTYAAAAJ&hl=en" target="_blank">Publications</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
       </ul>
     </nav>
-    <h1>{{ page.title | default: site.title }}</h1>
+    <h1>{{ site.title }}</h1>
     <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
   </header>
   <main>
     {{ content }}
   </main>
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
   <script>
     document.getElementById('nav-toggle').addEventListener('click', function() {
