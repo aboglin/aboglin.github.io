@@ -133,6 +133,11 @@ header h1 {
   color: var(--color-header-title);
 }
 
+header h1 a {
+  color: var(--color-header-title);
+  text-decoration: none;
+}
+
 header.expanded h1 {
   position: static;
   transform: none;
