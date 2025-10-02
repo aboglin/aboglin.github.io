@@ -1,5 +1,5 @@
 solar-system-bookshelf:
-  title: "Solar System Sci-Fi Bookshelf"
+  title: "Tying Real-World Events to Fictional Depictions of the Solar System"
   short_title: "Solar System Bookshelf"
   description: |
     The goal of this project was to allow people to explore the chronological impact of news and real world events on popular culture. Specifically, we were looking at how news related to astronomy and space travel impacted portrayals of our solar system in fiction. This included the overall volume of science fiction writing, changing depictions of planets over time (as more details of their geography are discovered), and trends in which planets are popular or unpopular settings for novels.
@@ -12,7 +12,6 @@ solar-system-bookshelf:
     - CSS
     - JavaScript
   tags:
-    - Front-End
     - InfoVis
     - UX
 
@@ -29,7 +28,6 @@ hypothesis-generation:
   tags:
     - InfoVis
     - UX
-    - Front-End
 
 instrumented-dog-toys:
   short_title: "FIDO: Instrumented Dog Toys"
@@ -44,18 +42,17 @@ instrumented-dog-toys:
     - Design
     - Experimental Design
     - Machine Learning
-    - Data Analysis
+    - Data Analytics
   tags:
     - Development
     - Design
-    - IoT
-    - Mobile and Ubiquitous Computing
-    - Prototyping Hardware
-    - Puppies!
+    - Animal Behavior
     - Tangible User Interfaces
+    - Data Analytics
+    - Research
 
 agent-j:
-  title: "Agent J: An Architectural AI Agent"
+  title: "An Architectural AI Agent Using Distributed Cognition and Emotion"
   description: |
     Our team project goal was to replicate the design process of an architect in the early stages of generating a custom house for a client. We developed an agent that tried to capture the client's needs and expectations when interacting with the client. The output is a sketch that reflected not only explicit inputs from the client but also other background information such as common facts or learned knowledge. Part of the project requirements were to integrate aspects of cognitive science, and in our case, we implemented observed forms of Distribute Cognition and Emotion into Agent J.
 
@@ -74,7 +71,6 @@ agent-j:
   tags:
     - Artificial Intelligence
     - Cognitive Science
-    - Research
 
 ml4t:
   title: "Machine Learning for Trading"
@@ -98,7 +94,7 @@ ml4t:
     - Machine Learning
 
 professor-on-fire:
-  title: "Professor on Fire Shawl"
+  title: "Software Development for the Professor on Fire Shawl"
   short_title: "Professor on Fire"
   description: |
     Collaborating with Clint Zeagler and Jessica Pater, we were asked to create a wearable for Dr. Beth Mynatt to wear while receiving recognition as an ACM Fellow. My roles was to lead the construction and development of the lighting that pulsed in response to the applause from the audience. The lighting had two additional modes: an ambient pulse that did not respond to noise, for when she was speaking, and an "off" mode.
@@ -137,14 +133,12 @@ dinosaurs:
     - Individual Contributor
   tags:
     - Development
-    - IoT
-    - Affective Computing
     - Prototyping Hardware
     - Tangible User Interfaces
     - Design
 
 project-pilgrim:
-  title: Project Pilgrim
+  title: "Project Pilgrim: Simplifying the Smart Home Experience"
   description: |
     Tired of juggling between apps to manage your connected devices? Or, annoyed with lengthy setup processes to connect your "smart" light bulbs, coffee maker or crock pot? Imagine if your devices at home connected through your phone rather than many pin numbers or pass codes to gain access.
 
@@ -161,10 +155,11 @@ project-pilgrim:
   roles:
     - Technical Intern
   tags:
-    - IoT
+    - Prototyping Hardware
+    - UX
 
 haptics:
-  title: "FIDO: Haptics as a Communication Tool"
+  title: "Evaluating Haptic Feedback for Working Dogs"
   short_title: "FIDO: Haptics"
   description: |
     Working dogs perform a variety of essential services for their human partners, from assisting people with disabilities, to Search and Rescue, police, and military work. Recent interest in the nascent field of Animal-Computer Interaction has prompted research in computer-mediated technology for communication between working dogs and their handlers. Haptic (touch) interfaces in the form of vibrating motors are a promising approach for handler-to-dog communication. Haptic interfaces can provide a silent, long-range method of sending commands to a dog, when voice or hand signals are inappropriate or impossible. However, evaluating haptic interfaces for dogs, who cannot self-report sensations, creates interesting challenges. This project draws on human-computer interaction concepts, such as Just Noticeable Difference, to explore methods and issues in evaluating haptic interfaces for working dogs. We created a haptic system and developed an evaluation method, reporting results for ten dogs of widely varying breeds, sizes, and coat types.
@@ -184,7 +179,7 @@ haptics:
     - Wearables
 
 ai-project:
-  title: "Detecting Occupancy Patterns of Smart Buildings for Efficient Energy Management"
+  title: "Smart Building Energy Management using Occupancy Prediction"
   short_title: "Smart Building Energy Management"
   description: |
     In 2011, the US building sector accounted for 41% of the total energy consumed, outperforming the transportation and industrial sectors by 28% and 31%, respectively.* Prior studies show that occupancy pattern detection can reduce the energy consumption of lighting by 50% and air conditioning by 20%.** The prediction of occupancy patterns is particularly important in Heating Ventilation and Air Conditioning (HVAC) control systems because the process of reaching the appropriate temperature is time consuming and costly***, however, the current standard from the American Society of Heating Refrigerating & Air-conditioning Engineers (ASHRAE) is a fixed model assuming identical occupancy patterns across buildings with different uses (e.g. commercial, retail). The objective of this study was to develop an AI-based model that predicted the occupancy pattern of a commercial building (for e.g. Mitsubishi Electric Research Laboratory (MERL)) in order to anticipate the optimal temperature for the HVAC system one hour from the present. We then compare our model of occupancy patterns with current standards from ASHRAE and provide an analysis of energy savings by adopting this model.
@@ -218,9 +213,10 @@ irl:
   tags:
     - Machine Learning
     - Development
+    - Research
 
 mit:
-  title: "MIT Media Lab Member Connect App"
+  title: "Design of the MIT Media Lab Member Connect App"
   description: |
     The app was developed to help MIT's Media Lab industry partners connect with different labs and researchers within the Media Lab at the annual Member Event. It allows partners to manage their event schedule, continue conversations with people they've met, and create meaningful relationships with the students and their projects.
   client: MIT Media Lab and Industry Partners
@@ -231,9 +227,11 @@ mit:
   roles:
     - Lead UX Designer
     - 2 person team
+  tags:
+    - UX
 
 discovery:
-  title: "Situational and Contextually-Aware Discovery through Person to Person Mobile & Tangible Interactions"
+  title: "Situational and Contextually-Aware Discovery through Person-to-Person Mobile & Tangible Interactions"
   short_title: "Situational and Contextually-Aware Discovery"
   description: |
     Within the past couple decades, particularly within the United States, populations have shifted from being extremely rural to being urbanized.* This unfamiliar and transient nature of our society often leaves a person experiencing a wide range of emotions as they move from one place to the next. As a greenhorn acquires information regarding their new surroundings and develops a routine rich in comfortable locations and experiences this turmoil subsides, but little innate guidance is provided for a new resident to cope with this highly personal process. Coarse knowledge of the culture of a neighborhood does not provide an easy introduction to the places or people within it. As a result, our problem space explores methods to address these issues post-relocation by considering the emotional, spatial, and social aspects associated with it.
@@ -250,7 +248,6 @@ discovery:
     - Physical Prototyping
     - Qualitative studies on a 3 person team
   tags:
-    - IoT
     - Mobile and Ubiquitous Computing
     - Prototyping Hardware
     - Tangible User Interfaces
@@ -278,7 +275,7 @@ chi-ideation-sessions:
     - Prototyping Hardware
 
 etextile-research:
-  title: "eTextile Knee Sleeve Research"
+  title: "E-textile Knee Rehabilitation Device Research"
   description: |
     This study intended to understand the interaction between various primary stakeholders, such as Total Knee Arthroplasty (TKA) patients and their doctors.  Through expert interviews and the observation of the rehabilitation process, an examination of existing techniques utilized by physical therapists during knee rehabilitation were analyzed with the intent to recognize how users interact with their existing rehabilitation products.  Ultimately however, the purpose was to look for product opportunities in the current system.
 
@@ -297,7 +294,7 @@ etextile-research:
     - Research
 
 etextile:
-  title: "eTextile Knee Sleeve"
+  title: "E-textile Knee Rehabilitation Device Design and Development"
   description: |
     Using the design criteria established during the workshop, the study designed and developed a physical therapy device using eTextile techniques and wearable technologies.  The roles that social acceptability, wearability, and fashion play are central factors to product adoption of wearable products.  The objective was to develop a platform for which others can develop their own system.
 
@@ -311,6 +308,7 @@ etextile:
   tags:
     - Wearables
     - Prototyping Hardware
+    - Research
 
 conductive-ink-toolkit:
   title: "Development of a Conductive Ink Toolkit for Educational Purposes"
@@ -335,7 +333,7 @@ conductive-ink-toolkit:
     - Design
 
 patagonia:
-  title: Evaluation of Patagonia's Corporate Identity for Product Development
+  title: "Evaluation of Patagonia's Corporate Identity for Product Development"
   short_title: "Patagonia Corporate Identity"
   description: |
     "Strategic Design Language" is about understanding the strategic design process and learning how to translate the complex information gathered from the process into visual design language.  The class helps students build compelling stories from their ideas by creating design language that is spoken in today's design communities and business world.
@@ -355,7 +353,7 @@ patagonia:
     - Research
 
 martin-sprouse:
-  title: Product Designer for Martin Sprouse Furniture
+  title: "Rendering and CAD Drawings for Martin Sprouse Furniture"
   short_title: "Martin Sprouse Furniture"
   description: |
     I had the amazing opportunity to work with Martin Sprouse — an extremely talented furniture designer in Emeryville. My role was to turn his concepts and ideas into detailed drawings for contractors and create renderings for clients. Below are a few pieces that I worked on.
@@ -370,7 +368,7 @@ martin-sprouse:
     - Design
 
 pottery-barn:
-  title: Concept Development for Pottery Barn
+  title: "Concept Development for Pottery Barn"
   short_title: "Pottery Barn"
   description: |
     Drawing inspiration from things around me (pre-Pinterest :)) and from current trends, concepts examined gaps in Pottery Barn's existing product catalogs. Shown below are inspiration boards, initial concepts, and final, more refined concepts.
@@ -397,3 +395,44 @@ project-frog:
     - Design
     - Architecture
     - Sustainability
+
+dog-robots:
+  title: "Training Working Dogs to Drive Robots through a Simple Maze"
+  short_title: "Dog-Driven Robots"
+  description: |
+    Training a working dog for a role such as bomb detection or search and rescue can take years, incurring a large cost. As detection work requires visual and odor-based problem-solving abilities, we have started to investigate how to quantify these abilities to assess a dog's potential. Towards this goal, we studied if and how a dog can remotely drive a robot through a simple maze. In our feasibility study, the dogs interact with an affordance mounted on a raised platform which triggers robot movement while also providing visual feedback from the robot. This study evaluated three affordances (tug, button press, and proximity) on two participants to drive the robot through a straight course. By identifying the best robot-canine interaction method, we show the potential for canines extending visual problem-solving abilities to an external device.
+  date: 2019
+  roles:
+    - Advising
+    - Researcher
+  tags:
+    - Cognitive Science
+    - Research
+  
+device-behavior:
+  title: "Characterizing Animal Behaviors in Response to Drug and Device Interventions"
+  short_title: "Characterizing Behavior"
+  description: |
+    We want to characterize behavioral phenotypes in order to see the effects of drug and device interventions over time. To do this, we leverage computational ethograms, which “automate the measurement and the analysis of animal behavior”. We use image-based tracking, which provides detailed information about the behavior of individuals at local scales, such as how they move, with which other individuals they interact, the sensory information available to them, and the role of internal and environmental drivers in shaping their behavior.
+  date: 2022
+  roles:
+    - Individual Contributor
+    - Management of 4 person team
+  tags:
+    - Animal Behavior
+    - Research
+    - Development
+    - Computer Vision
+    - Ingestibles
+
+diabetes-data:
+  title: "Analyzing Diabetes Data to Predict Hypoglycemic Events"
+  short_title: "Diabetes Data Analysis"
+  description: |
+    We analyzed continuous glucose monitor (CGM) data from 1135 patients with type 1 diabetes (T1D) representing 246.18 patient years. We show that a surprisingly large proportion of hypoglycemic episodes (20-30%) are follow-on events resulting from under-treatment of prior events and that the average duration of independent hypoglycemic events can last up to 79 to 108 minutes. We further show that the kinetics of hypoglycemic onset and persistence vary significantly by patient history, severity, and time of occurrence.
+  date: 2025
+  roles:
+    - Individual Contributor
+  tags:
+    - Data Analytics
+    - Healthcare
