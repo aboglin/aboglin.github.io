@@ -4,12 +4,14 @@ title: "Development of a Conductive Ink Toolkit for Educational Purposes"
 short_title: "Conductive Ink Toolkit"
 ---
 
-# {{ page.title }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-{{ site.data.portfolio.conductive-ink-toolkit.description }}
+  <p>{{ site.data.portfolio.conductive-ink-toolkit.description }}</p>
 
-**Date:** {{ site.data.portfolio.conductive-ink-toolkit.date }}
-
-**Course:** {{ site.data.portfolio.conductive-ink-toolkit.course }}
-
-**Skills:** {{ site.data.portfolio.conductive-ink-toolkit.skills | join: ", " }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.conductive-ink-toolkit.date }}</p>
+    <p><strong>Course:</strong> {{ site.data.portfolio.conductive-ink-toolkit.course }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.conductive-ink-toolkit.skills | join: ", " }}</p>
+  </div>
+</div>

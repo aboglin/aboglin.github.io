@@ -3,12 +3,14 @@ layout: default
 title: "eTextile Knee Sleeve"
 ---
 
-# {{ page.title }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-{{ site.data.portfolio.etextile.description }}
+  <p>{{ site.data.portfolio.etextile.description }}</p>
 
-**Date:** {{ site.data.portfolio.etextile.date }}
-
-**Course:** {{ site.data.portfolio.etextile.course }}
-
-**Skills:** {{ site.data.portfolio.etextile.skills | join: ", " }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.etextile.date }}</p>
+    <p><strong>Course:</strong> {{ site.data.portfolio.etextile.course }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.etextile.skills | join: ", " }}</p>
+  </div>
+</div>

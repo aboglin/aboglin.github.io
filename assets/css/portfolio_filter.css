@@ -1,47 +1,8 @@
-
-:root {
-  /* Core Colors */
-  --color-background: #F9FAFB;
-  --color-text: #1E293B;
-  --color-primary: #0F766E;   /* Deep Teal */
-  --color-secondary: #1E3A8A; /* Rich Navy */
-  --color-accent: #06B6D4;    /* Vibrant Cyan */
-  --color-highlight: #F97316; /* Coral Glow */
-
-  /* Alert Colors */
-  --color-success: #10B981;
-  --color-warning: var(--color-highlight);
-  --color-error: #DC2626;
-
-  /* Neutrals */
-  --color-gray-light: #E5E7EB;
-  --color-gray-medium: #CBD5E1;
-  --color-gray-dark: #475569;
-
-  /* Typography */
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Inter', sans-serif;
-
-  /* Spacing */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 4rem;
-
-  /* Radius */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
-  /* Header title color for improved contrast */
-  --color-header-title: #ffffff;
-  /* Header/navigation link color for contrast */
-  --color-nav-link: #ffffff;
-}
-
 .container {
   display: flex;
   flex-wrap: nowrap; /* Ensure the sidebar and content are side-by-side */
+  max-width: 100%;
+  width: 100%;
 }
 
 .sidebar {
@@ -54,9 +15,10 @@
 .content {
   flex: 1; /* Take the remaining space */
   padding: 1rem;
+  max-width: none; /* Allow content to use full available space */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
     flex-wrap: wrap; /* Allow the sidebar and content to stack */
   }
@@ -78,12 +40,20 @@
     background: none;
     border: none;
     font-size: 1.5em;
-  color: var(--color-gray-dark);
+    color: var(--color-gray-dark);
     margin: 1rem;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+  }
+
+  #tag-nav-toggle:hover {
+    background-color: var(--color-gray-light);
+    color: var(--color-primary);
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   #tag-nav-toggle {
     display: none;
   }
@@ -91,19 +61,207 @@
 
 #tag-nav-toggle {
   cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: var(--color-gray-dark);
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+#tag-nav-toggle:hover {
+  background-color: var(--color-gray-light);
+  color: var(--color-primary);
 }
 
 #tag-navbar button {
   display: block;
   width: 100%;
   margin-bottom: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.75rem 1rem;
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-gray-light);
   border: none;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  transition: all 0.2s ease;
+  border-radius: var(--radius-sm);
 }
 
 #tag-navbar button:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-gray-light);
+  color: var(--color-gray-dark);
   cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tag-navbar button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio page specific typography */
+.portfolio-page main {
+  max-width: 100%; /* Use full viewport width */
+  padding: 2rem;
+}
+
+.portfolio-content .portfolio-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-primary);
+  font-family: var(--font-heading), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Project list styling */
+#project-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.project-item {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-gray-medium);
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.project-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-primary);
+}
+
+.project-item a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.project-item a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* Portfolio subpage styling */
+.portfolio-subpage main {
+  max-width: 100%; /* Use full viewport width */
+  padding: 2rem;
+}
+
+.portfolio-subpage-content .portfolio-subpage-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+  padding-bottom: 0.5rem;
+  font-family: var(--font-heading), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.portfolio-subpage-content h2 {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-secondary);
+  font-family: var(--font-heading), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.portfolio-subpage-content h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-text);
+  font-family: var(--font-heading), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.portfolio-subpage-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: left; /* Override justify for project descriptions */
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.portfolio-subpage-content strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.portfolio-subpage-content a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.portfolio-subpage-content a:hover {
+  color: var(--color-secondary);
+  text-decoration-thickness: 3px;
+}
+
+/* Project metadata styling */
+.project-meta {
+  background-color: var(--color-gray-light);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--color-primary);
+}
+
+.project-meta p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.project-meta strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Responsive adjustments for portfolio */
+@media (max-width: 768px) {
+  .portfolio-content .portfolio-title {
+    font-size: 2.5rem;
+  }
+
+  .portfolio-subpage-content .portfolio-subpage-title {
+    font-size: 2rem;
+  }
+
+  .project-item {
+    padding: 1rem;
+  }
+
+  .project-item a {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-page main,
+  .portfolio-subpage main {
+    padding: 1rem;
+  }
 }

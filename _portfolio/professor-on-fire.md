@@ -4,12 +4,14 @@ title: "Professor on Fire Shawl"
 short_title: "Professor on Fire"
 ---
 
-# {{ page.title }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-{{ site.data.portfolio.professor-on-fire.description }}
+  <p>{{ site.data.portfolio.professor-on-fire.description }}</p>
 
-**Date:** {{ site.data.portfolio.professor-on-fire.date }}
-
-**Client:** {{ site.data.portfolio.professor-on-fire.client }}
-
-**Skills:** {{ site.data.portfolio.professor-on-fire.skills | join: ", " }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.professor-on-fire.date }}</p>
+    <p><strong>Client:</strong> {{ site.data.portfolio.professor-on-fire.client }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.professor-on-fire.skills | join: ", " }}</p>
+  </div>
+</div>

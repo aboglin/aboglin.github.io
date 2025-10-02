@@ -4,10 +4,13 @@ title: "Product Designer for Project Frog, Inc."
 short_title: "Project Frog"
 ---
 
-# {{ page.title }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-{{ site.data.portfolio.project-frog.description }}
+  <p>{{ site.data.portfolio.project-frog.description }}</p>
 
-**Date:** {{ site.data.portfolio.project-frog.date }}
-
-**Client:** {{ site.data.portfolio.project-frog.client }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.project-frog.date }}</p>
+    <p><strong>Client:</strong> {{ site.data.portfolio.project-frog.client }}</p>
+  </div>
+</div>

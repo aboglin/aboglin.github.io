@@ -3,12 +3,14 @@ layout: default
 title: "Training Working Dogs to Drive Robots through a Simple Maze"
 ---
 
-# {{ page.title }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-{{ site.data.portfolio.dog-robots.description }}
+  <p>{{ site.data.portfolio.dog-robots.description }}</p>
 
-**Date:** {{ site.data.portfolio.dog-robots.date }}
-
-**Course:** {{ site.data.portfolio.dog-robots.course }}
-
-**Skills:** {{ site.data.portfolio.dog-robots.skills | join: ", " }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.dog-robots.date }}</p>
+    <p><strong>Course:</strong> {{ site.data.portfolio.dog-robots.course }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.dog-robots.skills | join: ", " }}</p>
+  </div>
+</div>

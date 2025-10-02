@@ -4,12 +4,14 @@ title: "Situational and Contextually-Aware Discovery through Person to Person Mo
 short_title: "Situational and Contextually-Aware Discovery"
 ---
 
-# {{ page.title }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-{{ site.data.portfolio.discovery.description }}
+  <p>{{ site.data.portfolio.discovery.description }}</p>
 
-**Date:** {{ site.data.portfolio.discovery.date }}
-
-**Course:** {{ site.data.portfolio.discovery.course }}
-
-**Skills:** {{ site.data.portfolio.discovery.skills | join: ", " }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.discovery.date }}</p>
+    <p><strong>Course:</strong> {{ site.data.portfolio.discovery.course }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.discovery.skills | join: ", " }}</p>
+  </div>
+</div>

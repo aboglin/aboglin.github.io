@@ -5,7 +5,7 @@
   <title>{{ page.short_title | default: page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
-<body>
+<body{% if page.url contains '/portfolio/' and page.url != '/portfolio/' %} class="portfolio-subpage"{% elsif page.url == '/portfolio/' %} class="portfolio-page"{% endif %}>
   <header>
     <nav id="navbar">
       <ul>
