@@ -203,3 +203,61 @@
 .service-container a:hover {
   color: var(--color-secondary);
 }
+
+/* Research item pill boxes */
+.research-item {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.research-item h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  margin-top: 0;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.3rem;
+}
+
+.research-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.research-item ul {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.research-item li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
+  color: var(--color-text);
+}
+
+/* Research item links */
+.research-item a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.research-item a:hover {
+  color: var(--color-secondary);
+}
+
+/* Research item important notes */
+.research-item .important-note {
+  background-color: rgba(61, 110, 112, 0.1);
+  border-left: 4px solid var(--color-primary);
+  color: var(--color-text);
+}
