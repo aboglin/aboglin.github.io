@@ -4,10 +4,14 @@ title: "Detecting Occupancy Patterns of Smart Buildings for Efficient Energy Man
 short_title: "Smart Building Energy Management"
 ---
 
-{{ site.data.portfolio.ai-project.description }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-**Date:** {{ site.data.portfolio.ai-project.date }}
+  <p>{{ site.data.portfolio.ai-project.description }}</p>
 
-**Course:** {{ site.data.portfolio.ai-project.course }}
-
-**Skills:** {{ site.data.portfolio.ai-project.skills | join: ", " }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.ai-project.date }}</p>
+    <p><strong>Course:</strong> {{ site.data.portfolio.ai-project.course }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.ai-project.skills | join: ", " }}</p>
+  </div>
+</div>

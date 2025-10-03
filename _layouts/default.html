@@ -4,24 +4,28 @@
   <meta charset="UTF-8">
   <title>{{ page.short_title | default: page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  {% if page.url contains '/portfolio/' %}
+  <link rel="stylesheet" href="{{ "/assets/css/portfolio_filter.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/portfolio-exciting.css" | relative_url }}">
+  {% endif %}
 </head>
-<body>
+<body{% if page.url contains '/portfolio/' and page.url != '/portfolio/' %} class="portfolio-subpage"{% elsif page.url == '/portfolio/' %} class="portfolio-page"{% endif %}>
   <header>
     <nav id="navbar">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/pdf/CV_cbyrne.pdf">CV</a></li>
         <li><a href="https://scholar.google.com/citations?user=1K9COTYAAAAJ&hl=en" target="_blank">Publications</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
       </ul>
     </nav>
-    <h1>{{ page.title | default: site.title }}</h1>
+    <h1><a href="/">{{ site.title }}</a></h1>
     <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
   </header>
   <main>
     {{ content }}
   </main>
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
   <script>
     document.getElementById('nav-toggle').addEventListener('click', function() {
@@ -29,5 +33,8 @@
       header.classList.toggle('expanded');
     });
   </script>
+  {% if page.url contains '/portfolio/' %}
+  <script src="{{ "/assets/js/portfolio-exciting.js" | relative_url }}"></script>
+  {% endif %}
 </body>
 </html>

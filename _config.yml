@@ -11,3 +11,5 @@ collections:
     output: true
   domains:
     output: true
+  pdf:
+    output: true

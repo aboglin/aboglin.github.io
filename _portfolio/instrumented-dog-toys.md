@@ -4,10 +4,14 @@ title: "Predicting the Suitability of Working Dogs using Instrumented Dog Toys"
 short_title: "FIDO: Instrumented Dog Toys"
 ---
 
-{{ site.data.portfolio.instrumented-dog-toys.description }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-**Date:** {{ site.data.portfolio.instrumented-dog-toys.date }}
+  <p>{{ site.data.portfolio.instrumented-dog-toys.description }}</p>
 
-**Client:** {{ site.data.portfolio.instrumented-dog-toys.client }}
-
-**Skills:** {{ site.data.portfolio.instrumented-dog-toys.skills | join: ", " }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.instrumented-dog-toys.date }}</p>
+    <p><strong>Client:</strong> {{ site.data.portfolio.instrumented-dog-toys.client }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.instrumented-dog-toys.skills | join: ", " }}</p>
+  </div>
+</div>

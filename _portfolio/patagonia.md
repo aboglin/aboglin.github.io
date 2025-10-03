@@ -4,10 +4,14 @@ title: "Evaluation of Patagonia's Corporate Identity for Product Development"
 short_title: "Patagonia Corporate Identity"
 ---
 
-{{ site.data.portfolio.patagonia.description }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-**Date:** {{ site.data.portfolio.patagonia.date }}
+  <p>{{ site.data.portfolio.patagonia.description }}</p>
 
-**Course:** {{ site.data.portfolio.patagonia.course }}
-
-**Skills:** {{ site.data.portfolio.patagonia.skills | join: ", " }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.patagonia.date }}</p>
+    <p><strong>Course:</strong> {{ site.data.portfolio.patagonia.course }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.patagonia.skills | join: ", " }}</p>
+  </div>
+</div>

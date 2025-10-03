@@ -3,12 +3,16 @@ layout: default
 title: "Machine Learning for Trading"
 ---
 
-{{ site.data.portfolio.ml4t.description }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-**Date:** {{ site.data.portfolio.ml4t.date }}
+  <p>{{ site.data.portfolio.ml4t.description }}</p>
 
-**Course:** {{ site.data.portfolio.ml4t.course }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.ml4t.date }}</p>
+    <p><strong>Course:</strong> {{ site.data.portfolio.ml4t.course }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.ml4t.skills | join: ", " }}</p>
+  </div>
 
-**Skills:** {{ site.data.portfolio.ml4t.skills | join: ", " }}
-
-[Course Website]({{ site.data.portfolio.ml4t.website }})
+  <p><a href="{{ site.data.portfolio.ml4t.website }}">Course Website</a></p>
+</div>

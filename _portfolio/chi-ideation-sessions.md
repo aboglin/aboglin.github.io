@@ -4,10 +4,14 @@ title: "CHI Ideation Sessions: A Tool for Brainstorming"
 short_title: "CHI Ideation Sessions"
 ---
 
-{{ site.data.portfolio.chi-ideation-sessions.description }}
+<div class="portfolio-subpage-content">
+  <h1 class="portfolio-subpage-title">{{ page.title }}</h1>
 
-**Date:** {{ site.data.portfolio.chi-ideation-sessions.date }}
+  <p>{{ site.data.portfolio.chi-ideation-sessions.description }}</p>
 
-**Client:** {{ site.data.portfolio.chi-ideation-sessions.client }}
-
-**Skills:** {{ site.data.portfolio.chi-ideation-sessions.skills | join: ", " }}
+  <div class="project-meta">
+    <p><strong>Date:</strong> {{ site.data.portfolio.chi-ideation-sessions.date }}</p>
+    <p><strong>Client:</strong> {{ site.data.portfolio.chi-ideation-sessions.client }}</p>
+    <p><strong>Skills:</strong> {{ site.data.portfolio.chi-ideation-sessions.skills | join: ", " }}</p>
+  </div>
+</div>

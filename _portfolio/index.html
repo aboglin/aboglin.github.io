@@ -3,6 +3,9 @@ title: Portfolio
 layout: default
 ---
 
+<div class="portfolio-content">
+  <h1 class="portfolio-title">{{ page.title }}</h1>
+
 {% assign all_tags = "" %}
 {% for project in site.data.portfolio %}
   {% for tag in project[1].tags %}
@@ -11,4 +14,5 @@ layout: default
 {% endfor %}
 {% assign all_tags = all_tags | split: "," | uniq | sort %}
 
-{% include portfolio_filter.html %}
+  {% include portfolio_filter.html %}
+</div>

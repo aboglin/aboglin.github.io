@@ -1,8 +1,3 @@
-blurb: |
-  <span class="highlight" style="font-size:2.5em; font-weight:bold;">
-    I engineer intelligent interfaces that decode latent states and behaviors, creating adaptive models that respond in real time to proactively deliver actionable insights for care, automate monitoring, and optimize decision-making workflows across clinical, research, and caregiving contexts.
-  </span>
-
 fields:
   aci:
     heading: Animal-Computer Interaction
@@ -10,12 +5,12 @@ fields:
       I take a multi-pronged approach to data for ACI. Leveraging interviews with handlers, observation of handler/canine interactions and relationships, and by quantifying the canine interactions with their world, we can start to get a better understanding of how to design technology for animals.
 
   ingestible:
-    heading: Biobehavioral Ingestibles
+    heading: Biobehavior
     description: |
       I have experience in designing and building ingestible devices for both humans and animals. I have worked on projects that involve the use of ingestible devices to monitor and improve health and behavior.
 
   bioelectronics:
-    heading: Bioelectronics
+    heading: Bioelectronics and Ingestibles
     description: |
       I have experience in designing and building bioelectronic devices for both humans and animals. I have worked on projects that involve the use of bioelectronic devices to monitor and improve health and behavior.
 
