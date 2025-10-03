@@ -261,3 +261,67 @@
   border-left: 4px solid var(--color-primary);
   color: var(--color-text);
 }
+
+/* Toggle button styling */
+.toggle-button {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.toggle-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+}
+
+.toggle-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.toggle-button:hover .button-icon {
+  transform: scale(1.1);
+}
+
+/* Research item content transitions */
+.research-item-summary,
+.research-item-details {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ensure proper spacing for toggle buttons */
+.research-item-summary {
+  position: relative;
+}
+
+.research-item-details {
+  position: relative;
+}
+
+/* Mobile responsiveness for toggle buttons */
+@media (max-width: 768px) {
+  .toggle-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+  }
+}
