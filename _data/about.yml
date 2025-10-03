@@ -1,3 +1,64 @@
+research_sections:
+  biobehavior:
+    heading: Biobehavior
+    description: |
+      My research develops technology-driven methods to objectively assess behavior and suitability, using sensors and computer vision to improve welfare, efficiency, and selection processes across species.
+    summary: |
+      My research develops technology-driven methods to objectively assess behavior and suitablity, using sensors and computer vision to improve welfare, efficiency, and selection processes across species.
+    details: |
+      My work has integrated biobehavioral analysis and engineering to objectively identify job suitability in working dogs, which leverages sensor-equipped toys to quantify interaction patterns. By measuring behaviors such as bite duration and frequency, this approach uncovers data-driven indicators of temperament and aptitude that improve selection processes for service roles. Such methodologies move beyond subjective assessment, bridging animal needs and technological solutions to support more efficient, ethical, and transparent working dog placement. In parallel, I employ computer vision to monitor swine behaviors before, during, and after the use of ingestible devices, quantifying behavioral changes to rigorously assess device impact, such as satiety modulation from vibrating capsules—bridging animal needs and technological solutions across species.
+    icon: 
+      type: "svg"
+      path: "/assets/icons/biobehavior.svg"
+      fallback: "M677.3,784c0,4.5,1.1,9.8,3.1,15.8,5.4,16.9,11.2,30.1,18.3,44.5,2.1,4.3,3.2,7.8,3.4,10.6.3,6.6-3.5,11.4-11.3,14.2-20.6,7.6-31.8,11.8-33.7,12.5-7.3,2.9-13.2,2.3-17.5-2s-4-5.9-6.4-11.9c-6.6-17.2-15.9-35.1-27.9-53.7-4.2-6.6-7.9-11.7-10.9-15.2-10.6-12.3-18.2-21.8-29.5-31.3-7.5-6.3-15.6-12.5-24.4-18.4-10-6.8-21.7-12.1-35.6-17-8.8-3.1-17-6.8-24.6-11.3-.4-.2-.8-.2-1.1,0-29,16.4-62.9,22.9-94.5,12.4-7.6-2.5-17-6.8-28.1-12.9-17.6-9.6-33.7-19.8-42.6-36.8-.5-1-2.3-4.4-5.2-10.3-5.2-10.4-8.8-17.7-22.3-13.6-17.4,5.2-32.2,9.8-49.8,5.2-.6-.2-5.3-1.8-14-4.8-8.1-2.8-15.8-3.8-23-2.9-9.4,1.1-15.9,1.8-19.5,1.9-21.2,1-38.7-5.8-52.7-20.5-8.5-8.9-11.5-22.4-23.1-29.4-3.3-2-6.9-4.1-10-6.6-13.6-11.1-21.8-25.9-24.5-44.6-1.6-11,.3-18.2,2.4-28.7.6-3.1.9-7.4.8-12.9-.4-23.4,2.3-43.6,14.8-63.7.9-1.5,1.4-3.7,1.3-6.7-.2-8.8-.2-13.3-.2-13.7-.2-12.8,2-28.6,9.7-39.1,8.4-11.6,18.3-22,29.5-31.3,2.6-2.2,4.7-6.1,6.2-10.2,2.8-7.7,4.8-12.7,5.9-15,6.4-13.5,15.7-24.5,27.7-32.9,13.3-9.3,26.3-16.1,41.8-24.2,3.5-1.8,7.1-4.9,11-9.1,4.6-5.2,8.6-9.6,12-13.2,17.1-18.4,38.2-25.6,63.1-25.9,1.3,0,2.4-.5,3.3-1.4,1.3-1.3,2.9-3.3,4.7-5.8,8.7-12.2,24.7-19.9,40-26,18.3-7.4,37.6-7.1,57.5-4.8,2.7.3,5.4,0,8.2-.9,8.3-2.8,16.8-5.4,25.5-7.8,23.1-6.4,47.8-8.9,71-7.5,15.2.9,26,3.8,39.7,8.9,3.1,1.1,5.5.8,8.8-.5,5.4-2.2,9.8-4,13.2-5.3,6-2.3,13.9-3.5,23.8-3.6,24.5-.3,47.6,6.6,69.4,15.9,10.7,4.6,18.2,11.9,26.1,18.6.9.8,2.1,1.3,3.3,1.4,19.4,1.4,38.1,5.6,56.2,12.7,12.5,4.9,24.5,11.1,33.2,20.3,8.2,8.7,15.1,19.7,19.6,26.4,6.8,10.2,17.3,12.8,27.5,18.1,8.3,4.3,15.3,10.5,20.9,18.6,6.6,9.5,11.5,19.1,14.7,29,2.7,8.2,5.2,15.1,7.5,20.9,1.3,3,3.2,5.8,6,8.4,6.2,5.8,12.9,10.7,18.6,17.5,14.7,17.6,20,38.1,17,61-.9,6.9.4,13.5,3.9,19.8,4.8,8.6,13.4,20.7,16.4,34.2,2.4,10.8,3.6,21.7,3.4,32.5,0,6.7-1.1,13-3.6,19.7-3.5,9.4-6.5,17.8-7.7,29.1-1.1,10.5-2,19.1-2.7,25.9-2.1,18.8-11.1,33.1-26.9,42.7-1.6,1-5,2.6-10.2,4.8-9.2,4-17.4,5.7-29.1,8.5-4.7,1.1-7.9,2.9-7.9,8.2,0,12.2-1.1,23.6-3.4,34.1-4.7,22-15.8,39.9-33.2,53.8-22.6,17.9-48.6,24.6-78.1,24.8-15,0-32.9,0-53.9-.2-.9,0-1.3.3-1.3.7h0Z"
+    color: "var(--color-success)"
+    href: "#biobehavior-section"
+
+  ingestibles:
+    heading: Implantable and Ingestible Devices
+    description: |
+      I engineer ingestible and implantable devices for probing the gut-brain axis, integrating miniaturized sensors, stimulators, and wireless communication modules into biocompatible platforms.
+    summary: |
+      I engineer ingestible and implantable devices for probing the gut-brain axis. This work requires integrating miniaturized sensors, stimulators, and wireless communication modules into biocompatible platforms that can withstand the harsh gastrointestinal environment.
+    details: |
+      My work has incorporated multimodal sensing, such as motility or physiological signals. It has focused on delivering targeted neuromodulation through electrical or mechanostimulatory actuation to modulate enteric neural activity. Implantable systems, particularly those interfacing with the enteric nervous system, must achieve stable, low-noise signal acquisition while minimizing tissue irritation and ensuring long-term reliability. Coupling these peripheral devices with electrophysiological monitoring of brain signals, such as cortical or vagal recordings, enables bidirectional feedback loops that capture correlations between gut events and central neural responses. Advanced computational pipelines, including real-time signal processing, feature extraction, and closed-loop control algorithms, allow these systems to dynamically adjust stimulation parameters based on detected neural or behavioral states. Together, this convergence of biomedical engineering and neurogastroenterology provides a pathway to mechanistically decode gut-brain communication and design targeted interventions for disorders like irritable bowel syndrome, obesity, and functional dyspepsia.
+    icon:
+      type: "svg"
+      path: "/assets/icons/ingestibles.svg"
+      fallback: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2V7zm0 8h2v2h-2v-2z"
+    color: "var(--color-accent)"
+    href: "#ingestibles-section"
+
+  wearable:
+    heading: Wearable Computing
+    description: |
+      My research sits at the intersection of user-centered design, behavioral analysis, and wearable technology, advancing both human-device and animal-computer interaction.
+    summary: |
+      My research also sits at the intersection of user-centered design, behavioral analysis, and wearable technology, advancing both human-device and animal-computer interaction.
+    details: |
+      From developing tactile and two-way communication systems for working dogs to designing user-informed eTextile rehabilitation devices, a core theme is the creation of accessible, embedded systems that enable nonverbal, bidirectional communication and are evaluated through robust behavioral and user-focused methods. This translational approach bridges laboratory innovation and practical deployment, ensuring that both animal and human end users are meaningfully integrated into the technological design process.
+    icon:
+      type: "svg"
+      path: "/assets/icons/wearable.svg"
+      fallback: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+    color: "var(--color-info)"
+    href: "#wearable-section"
+
+  aci:
+    heading: Building out the Field of Animal-Computer Interaction
+    description: |
+      My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science.
+    summary: |
+      My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science to engineer technologies that support meaningful multispecies integration.
+    details: |
+      Through the development of sensing systems, ingestible devices, and interactive environments, I create new tools and frameworks that enable richer communication and data sharing between humans and animals in diverse contexts, from farming and laboratory research to home and clinical care. This work aims to forge deeper, bidirectional relationships, advancing our understanding of animal agency while expanding the possibilities for multispecies collaboration and shared experiences.
+    icon:
+      type: "svg"
+      path: "/assets/icons/aci.svg"
+      fallback: "M4.5 12.75a6 6 0 0 1 6-6h3a6 6 0 0 1 6 6v5.25a.75.75 0 0 1-.75.75h-9.5a.75.75 0 0 1-.75-.75v-5.25z M9.75 6.75a.75.75 0 0 0-1.5 0v2.25a.75.75 0 0 0 1.5 0V6.75zM15.75 6.75a.75.75 0 0 0-1.5 0v2.25a.75.75 0 0 0 1.5 0V6.75z"
+    color: "var(--color-highlight)"
+    href: "#aci-section"
+
 fields:
   aci:
     heading: Animal-Computer Interaction

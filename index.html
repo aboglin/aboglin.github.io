@@ -13,10 +13,21 @@ title: Ceara Byrne
     <h1 style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: var(--font-bold); margin-bottom: 1rem; color: var(--color-text); letter-spacing: -0.02em;">Dr. Ceara Byrne</h1>
     <p style="font-size: var(--text-lg); font-weight: var(--font-normal); line-height: 1.7; margin-bottom: 1.5rem; color: var(--color-text-secondary); letter-spacing: -0.01em;">Specializing in adaptive human-animal interfaces and ingestible biosensors, I engineer real-time systems that decode latent physiological and behavioral states using cutting-edge tools like machine learning, computer vision, and ultra-low-power embedded design.</p>
     <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
-      <a href="#biobehavior-section" class="research-tag biobehavior-tag" style="background: var(--color-success); color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: var(--text-sm); font-weight: var(--font-medium); text-decoration: none; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2); display: inline-flex; align-items: center; gap: 0.5rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> Biobehavior</a>
-      <a href="#ingestibles-section" class="research-tag ingestibles-tag" style="background: var(--color-accent); color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: var(--text-sm); font-weight: var(--font-medium); text-decoration: none; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2); display: inline-flex; align-items: center; gap: 0.5rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2V7zm0 8h2v2h-2v-2z"/></svg>Implantable and Ingestible Devices</a>
-      <a href="#wearable-section" class="research-tag wearable-tag" style="background: var(--color-info); color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: var(--text-sm); font-weight: var(--font-medium); text-decoration: none; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(14, 165, 233, 0.2); display: inline-flex; align-items: center; gap: 0.5rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> Wearable Computing</a>
-      <a href="#aci-section" class="research-tag aci-tag" style="background: var(--color-highlight); color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: var(--text-sm); font-weight: var(--font-medium); text-decoration: none; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2); display: inline-flex; align-items: center; gap: 0.5rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 12.75a6 6 0 0 1 6-6h3a6 6 0 0 1 6 6v5.25a.75.75 0 0 1-.75.75h-9.5a.75.75 0 0 1-.75-.75v-5.25z"/><path d="M9.75 6.75a.75.75 0 0 0-1.5 0v2.25a.75.75 0 0 0 1.5 0V6.75zM15.75 6.75a.75.75 0 0 0-1.5 0v2.25a.75.75 0 0 0 1.5 0V6.75z"/></svg> Animal-Computer Interaction</a>
+      {% for section in site.data.about.research_sections %}
+        <a href="{{ section[1].href }}" class="research-tag {{ section[0] }}-tag" style="background: {{ section[1].color }}; color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: var(--text-sm); font-weight: var(--font-medium); text-decoration: none; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2); display: inline-flex; align-items: center; gap: 0.5rem;">
+          {% if section[1].icon.type == "svg" %}
+            {% if section[1].icon.path %}
+              <img src="{{ section[1].icon.path | relative_url }}" alt="{{ section[1].heading }} icon" width="16" height="16" style="filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+              <svg width="16" height="16" viewBox="{% if section[0] == 'biobehavior' %}0 0 1024 1024{% else %}0 0 24 24{% endif %}" fill="white" style="display: none;"><path d="{{ section[1].icon.fallback }}"/></svg>
+            {% else %}
+              <svg width="16" height="16" viewBox="{% if section[0] == 'biobehavior' %}0 0 1024 1024{% else %}0 0 24 24{% endif %}" fill="white"><path d="{{ section[1].icon.fallback }}"/></svg>
+            {% endif %}
+          {% elsif section[1].icon.type == "image" %}
+            <img src="{{ section[1].icon.path | relative_url }}" alt="{{ section[1].heading }} icon" width="16" height="16" style="filter: brightness(0) invert(1);">
+          {% endif %}
+          {{ section[1].heading }}
+        </a>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -27,7 +38,20 @@ title: Ceara Byrne
   <h1 style="text-align: center; font-family: var(--font-heading); font-size: var(--text-5xl); font-weight: var(--font-bold); margin-bottom: 3rem; color: var(--color-text); letter-spacing: -0.02em; position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 0.5rem;"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>Research</h1>
 
   <section id="biobehavior-section" class="research-item section-biobehavior animate-on-scroll">
-    <h2><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>Biobehavior</h2>
+    <h2>
+      {% assign biobehavior_section = site.data.about.research_sections.biobehavior %}
+      {% if biobehavior_section.icon.type == "svg" %}
+        {% if biobehavior_section.icon.path %}
+          <img src="{{ biobehavior_section.icon.path | relative_url }}" alt="{{ biobehavior_section.heading }} icon" width="24" height="24" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <svg width="24" height="24" viewBox="0 0 1024 1024" fill="currentColor" style="display: none; margin-right: 0.5rem; vertical-align: middle;"><path d="{{ biobehavior_section.icon.fallback }}"/></svg>
+        {% else %}
+          <svg width="24" height="24" viewBox="0 0 1024 1024" fill="currentColor" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle;"><path d="{{ biobehavior_section.icon.fallback }}"/></svg>
+        {% endif %}
+      {% elsif biobehavior_section.icon.type == "image" %}
+        <img src="{{ biobehavior_section.icon.path | relative_url }}" alt="{{ biobehavior_section.heading }} icon" width="24" height="24" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);">
+      {% endif %}
+      Biobehavior
+    </h2>
     <div class="research-item-summary">
       <p>My research develops technology-driven methods to objectively assess behavior and suitablity, using sensors and computer vision to improve welfare, efficiency, and selection processes across species.</p>
       <button class="toggle-button" data-target="biobehavior-details">
@@ -53,7 +77,20 @@ title: Ceara Byrne
   </section>
 
   <section id="ingestibles-section" class="research-item section-ingestibles animate-on-scroll">
-    <h2><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2V7zm0 8h2v2h-2v-2z"/></svg>Ingestible and Implantable Devices</h2>
+    <h2>
+      {% assign ingestibles_section = site.data.about.research_sections.ingestibles %}
+      {% if ingestibles_section.icon.type == "svg" %}
+        {% if ingestibles_section.icon.path %}
+          <img src="{{ ingestibles_section.icon.path | relative_url }}" alt="{{ ingestibles_section.heading }} icon" width="24" height="24" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none; margin-right: 0.5rem; vertical-align: middle;"><path d="{{ ingestibles_section.icon.fallback }}"/></svg>
+        {% else %}
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle;"><path d="{{ ingestibles_section.icon.fallback }}"/></svg>
+        {% endif %}
+      {% elsif ingestibles_section.icon.type == "image" %}
+        <img src="{{ ingestibles_section.icon.path | relative_url }}" alt="{{ ingestibles_section.heading }} icon" width="24" height="24" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);">
+      {% endif %}
+      Ingestible and Implantable Devices
+    </h2>
     <div class="research-item-summary">
       <p>I engineer ingestible and implantable devices for probing the gut-brain axis. This work requires integrating miniaturized sensors, stimulators, and wireless communication modules into biocompatible platforms that can withstand the harsh gastrointestinal environment.</p>
       <button class="toggle-button" data-target="ingestibles-details">
@@ -78,7 +115,20 @@ title: Ceara Byrne
   </section>
 
   <section id="wearable-section" class="research-item section-wearable animate-on-scroll">
-    <h2><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>Wearable Computing</h2>
+    <h2>
+      {% assign wearable_section = site.data.about.research_sections.wearable %}
+      {% if wearable_section.icon.type == "svg" %}
+        {% if wearable_section.icon.path %}
+          <img src="{{ wearable_section.icon.path | relative_url }}" alt="{{ wearable_section.heading }} icon" width="24" height="24" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none; margin-right: 0.5rem; vertical-align: middle;"><path d="{{ wearable_section.icon.fallback }}"/></svg>
+        {% else %}
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle;"><path d="{{ wearable_section.icon.fallback }}"/></svg>
+        {% endif %}
+      {% elsif wearable_section.icon.type == "image" %}
+        <img src="{{ wearable_section.icon.path | relative_url }}" alt="{{ wearable_section.heading }} icon" width="24" height="24" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);">
+      {% endif %}
+      Wearable Computing
+    </h2>
     <div class="research-item-summary">
       <p>My research also sits at the intersection of user-centered design, behavioral analysis, and wearable technology, advancing both human-device and animal-computer interaction.</p>
       <button class="toggle-button" data-target="wearable-details">
@@ -105,7 +155,20 @@ title: Ceara Byrne
 
 
   <section id="aci-section" class="research-item section-aci animate-on-scroll">
-    <h2><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle;"><path d="M4.5 12.75a6 6 0 0 1 6-6h3a6 6 0 0 1 6 6v5.25a.75.75 0 0 1-.75.75h-9.5a.75.75 0 0 1-.75-.75v-5.25z"/><path d="M9.75 6.75a.75.75 0 0 0-1.5 0v2.25a.75.75 0 0 0 1.5 0V6.75zM15.75 6.75a.75.75 0 0 0-1.5 0v2.25a.75.75 0 0 0 1.5 0V6.75z"/></svg>Building out the Field of Animal-Computer Interaction</h2>
+    <h2>
+      {% assign aci_section = site.data.about.research_sections.aci %}
+      {% if aci_section.icon.type == "svg" %}
+        {% if aci_section.icon.path %}
+          <img src="{{ aci_section.icon.path | relative_url }}" alt="{{ aci_section.heading }} icon" width="24" height="24" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none; margin-right: 0.5rem; vertical-align: middle;"><path d="{{ aci_section.icon.fallback }}"/></svg>
+        {% else %}
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle;"><path d="{{ aci_section.icon.fallback }}"/></svg>
+        {% endif %}
+      {% elsif aci_section.icon.type == "image" %}
+        <img src="{{ aci_section.icon.path | relative_url }}" alt="{{ aci_section.heading }} icon" width="24" height="24" style="display: inline-block; margin-right: 0.5rem; vertical-align: middle; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);">
+      {% endif %}
+      Building out the Field of Animal-Computer Interaction
+    </h2>
     <div class="research-item-summary">
       <p>My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science to engineer technologies that support meaningful multispecies integration</p>
       <button class="toggle-button" data-target="aci-details">
