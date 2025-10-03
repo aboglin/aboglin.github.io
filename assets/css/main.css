@@ -2,7 +2,8 @@
   /* Core Colors */
   --color-background: #F7F7F7;
   --color-text: #1E293B;
-  --color-primary: #3D6E70;   /* Deep Teal */
+  /* --color-primary: #3D6E70;   Deep Teal */
+--color-primary: #2e2e2e;   /* Dark Olive Green */
   --color-secondary: #1E3A8A; /* Rich Navy */
   --color-accent: #06B6D4;    /* Vibrant Cyan */
   --color-highlight: #F97316; /* Coral Glow */
@@ -13,13 +14,14 @@
   --color-error: #DC2626;
 
   /* Neutrals */
-  --color-gray-light: #E5E7EB;
+  --color-gray-light: #f7f7f7;
   --color-gray-medium: #CBD5E1;
   --color-gray-dark: #2E2E2E;
 
   /* Typography */
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Helvetica', sans-serif;
+  /* --font-body: 'Inter', sans-serif; */
+  --font-body: 'Georgia', serif;
 
   /* Spacing */
   --spacing-xs: 0.25rem;

@@ -14,6 +14,8 @@ solar-system-bookshelf:
   tags:
     - InfoVis
     - UX
+  image:
+    - /assets/img/
 
 hypothesis-generation:
   title: "Hypothesis Generation via Node-Link Diagrams"
@@ -28,6 +30,8 @@ hypothesis-generation:
   tags:
     - InfoVis
     - UX
+  image:
+    - /assets/img/
 
 instrumented-dog-toys:
   short_title: "FIDO: Instrumented Dog Toys"
@@ -50,6 +54,8 @@ instrumented-dog-toys:
     - Tangible User Interfaces
     - Data Analytics
     - Research
+  image:
+    - /assets/img/
 
 agent-j:
   title: "An Architectural AI Agent Using Distributed Cognition and Emotion"
@@ -71,6 +77,8 @@ agent-j:
   tags:
     - Artificial Intelligence
     - Cognitive Science
+  image:
+    - /assets/img/
 
 ml4t:
   title: "Machine Learning for Trading"
@@ -92,6 +100,8 @@ ml4t:
     - Individual Contributor
   tags:
     - Machine Learning
+  image:
+    - /assets/img/
 
 professor-on-fire:
   title: "Software Development for the Professor on Fire Shawl"
@@ -113,6 +123,8 @@ professor-on-fire:
     - Wearables
     - Development
     - Prototyping Hardware
+  image:
+    - /assets/img/
 
 dinosaurs:
   title: "Tangible Feedback and Sharing of Emotions through Soft Toy Dinosaurs"
@@ -136,6 +148,8 @@ dinosaurs:
     - Prototyping Hardware
     - Tangible User Interfaces
     - Design
+  image:
+    - /assets/img/
 
 project-pilgrim:
   title: "Project Pilgrim: Simplifying the Smart Home Experience"
@@ -146,7 +160,7 @@ project-pilgrim:
 
     In the future, Pilgrim could let you use your phone to give temporary access to your home. This project is just one example of how technology could help simplify your life.
   client: AT&T Foundry, Ecosystems and Innovation
-  date: May 2015
+  date: 2015
   skills:
     - Raspberry Pi
     - Linux
@@ -157,6 +171,8 @@ project-pilgrim:
   tags:
     - Prototyping Hardware
     - UX
+  image:
+    - /assets/img/
 
 haptics:
   title: "Evaluating Haptic Feedback for Working Dogs"
@@ -177,6 +193,8 @@ haptics:
     - Development
     - Research
     - Wearables
+  image:
+    - /assets/img/
 
 ai-project:
   title: "Smart Building Energy Management using Occupancy Prediction"
@@ -184,7 +202,7 @@ ai-project:
   description: |
     In 2011, the US building sector accounted for 41% of the total energy consumed, outperforming the transportation and industrial sectors by 28% and 31%, respectively.* Prior studies show that occupancy pattern detection can reduce the energy consumption of lighting by 50% and air conditioning by 20%.** The prediction of occupancy patterns is particularly important in Heating Ventilation and Air Conditioning (HVAC) control systems because the process of reaching the appropriate temperature is time consuming and costly***, however, the current standard from the American Society of Heating Refrigerating & Air-conditioning Engineers (ASHRAE) is a fixed model assuming identical occupancy patterns across buildings with different uses (e.g. commercial, retail). The objective of this study was to develop an AI-based model that predicted the occupancy pattern of a commercial building (for e.g. Mitsubishi Electric Research Laboratory (MERL)) in order to anticipate the optimal temperature for the HVAC system one hour from the present. We then compare our model of occupancy patterns with current standards from ASHRAE and provide an analysis of energy savings by adopting this model.
   course: CS6601 Artificial Intelligence
-  date: December 2014
+  date: 2014
   skills:
     - MATLAB
     - Python
@@ -193,6 +211,8 @@ ai-project:
     - Architecture
     - Artificial Intelligence
     - Sustainability
+  image:
+    - /assets/img/
 
 irl:
   title: "Chaining Dynamic Movement Primitives (DMPs) for Learning Complex Tasks from Demonstration"
@@ -202,7 +222,7 @@ irl:
 
     We take a different approach to task learning: chaining multiple DMPs to represent a series of sub-skills, which amount to a complex task. By splitting up a complicated task into several sub-skills and learning a DMP for each sub-skill, the resulting task execution can be more flexible in reaching multiple targets throughout completion. We tested a approach using a book-shelving problem in which the robot learner was taught to slide a book to the edge of a countertop, reorient it, and place it on a target area. We explored using this chained- DMP approach for two scenarios: one in which DMPs modeled a set of three demonstrations, and one in which DMPs modeled a single demonstration. We found that chaining multiple DMPs that were trained over a single demonstration may be an effective method for encoding complex skills.
   course: Interactive Robot Learning
-  date: December 2014
+  date: 2014
   skills:
     - Java
     - Python
@@ -214,6 +234,8 @@ irl:
     - Machine Learning
     - Development
     - Research
+  image:
+    - /assets/img/
 
 mit:
   title: "Design of the MIT Media Lab Member Connect App"
@@ -229,6 +251,8 @@ mit:
     - 2 person team
   tags:
     - UX
+  image:
+    - /assets/img/
 
 discovery:
   title: "Situational and Contextually-Aware Discovery through Person-to-Person Mobile & Tangible Interactions"
@@ -236,7 +260,7 @@ discovery:
   description: |
     Within the past couple decades, particularly within the United States, populations have shifted from being extremely rural to being urbanized.* This unfamiliar and transient nature of our society often leaves a person experiencing a wide range of emotions as they move from one place to the next. As a greenhorn acquires information regarding their new surroundings and develops a routine rich in comfortable locations and experiences this turmoil subsides, but little innate guidance is provided for a new resident to cope with this highly personal process. Coarse knowledge of the culture of a neighborhood does not provide an easy introduction to the places or people within it. As a result, our problem space explores methods to address these issues post-relocation by considering the emotional, spatial, and social aspects associated with it.
   course: CS6750 Human Computer Interaction
-  date: December 2014
+  date: 2014
   skills:
     - Questionnaires
     - Concepting
@@ -252,6 +276,8 @@ discovery:
     - Prototyping Hardware
     - Tangible User Interfaces
     - UX
+  image:
+    - /assets/img/
 
 chi-ideation-sessions:
   title: "CHI Ideation Sessions: A Tool for Brainstorming"
@@ -273,6 +299,8 @@ chi-ideation-sessions:
     - Design
     - UX
     - Prototyping Hardware
+  image:
+    - /assets/img/
 
 etextile-research:
   title: "E-textile Knee Rehabilitation Device Research"
@@ -292,6 +320,8 @@ etextile-research:
     - Participatory Design Workshop
   tags:
     - Research
+  image:
+    - /assets/img/
 
 etextile:
   title: "E-textile Knee Rehabilitation Device Design and Development"
@@ -309,6 +339,8 @@ etextile:
     - Wearables
     - Prototyping Hardware
     - Research
+  image:
+    - /assets/img/
 
 conductive-ink-toolkit:
   title: "Development of a Conductive Ink Toolkit for Educational Purposes"
@@ -316,7 +348,7 @@ conductive-ink-toolkit:
   description: |
     This project discusses the design and development of a toolkit interface to enable the construction of interactive paper tools. Our work for this project consisted of three main parts. The first part was the development of a software toolkit, or the graphical user interface. This toolkit allows the user to create a drawing using different components and print out interactive learning tools. The second part was the design of the hardware architecture, or the physical user interface. An Arduino device was flexible enough so that it was easily configured to work with various interactive components and, for this project, the output of the interaction responded with LED lights. Lastly, the project sought feedback on the interaction of both the graphical and physical interfaces from Electrical Engineering, Human-Computer Interaction, and Industrial Design experts.
   course: CS7470 Mobile and Ubiquitous Computing
-  date: May 2013
+  date: 2013
   skills:
     - Arduino
     - Conductive Ink Printers
@@ -331,6 +363,8 @@ conductive-ink-toolkit:
     - Tangible User Interfaces
     - UX
     - Design
+  image:
+    - /assets/img/
 
 patagonia:
   title: "Evaluation of Patagonia's Corporate Identity for Product Development"
@@ -338,7 +372,7 @@ patagonia:
   description: |
     "Strategic Design Language" is about understanding the strategic design process and learning how to translate the complex information gathered from the process into visual design language.  The class helps students build compelling stories from their ideas by creating design language that is spoken in today's design communities and business world.
   course: ID6214 Strategic Design Language
-  date: December 2011
+  date: 2011
   skills:
     - Branding
     - Identity
@@ -351,6 +385,8 @@ patagonia:
   tags:
     - Design
     - Research
+  image:
+    - /assets/img/
 
 martin-sprouse:
   title: "Rendering and CAD Drawings for Martin Sprouse Furniture"
@@ -366,6 +402,8 @@ martin-sprouse:
     - Product Designer
   tags:
     - Design
+  image:
+    - /assets/img/
 
 pottery-barn:
   title: "Concept Development for Pottery Barn"
@@ -381,6 +419,8 @@ pottery-barn:
     - Product Designer
   tags:
     - Design
+  image:
+    - /assets/img/
 
 project-frog:
   title: "Product Designer for Project Frog, Inc."
@@ -395,6 +435,8 @@ project-frog:
     - Design
     - Architecture
     - Sustainability
+  image:
+    - /assets/img/
 
 dog-robots:
   title: "Training Working Dogs to Drive Robots through a Simple Maze"
@@ -408,6 +450,8 @@ dog-robots:
   tags:
     - Cognitive Science
     - Research
+  image:
+    - /assets/img/
   
 device-behavior:
   title: "Characterizing Animal Behaviors in Response to Drug and Device Interventions"
@@ -424,6 +468,8 @@ device-behavior:
     - Development
     - Computer Vision
     - Ingestibles
+  image:
+    - /assets/img/
 
 diabetes-data:
   title: "Analyzing Diabetes Data to Predict Hypoglycemic Events"
@@ -436,3 +482,5 @@ diabetes-data:
   tags:
     - Data Analytics
     - Healthcare
+  image:
+    - /assets/img/
