@@ -6,21 +6,28 @@ title: Ceara Byrne
 <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
 
 <section class="about-container">
-  <div class="about-image">
+  <div class="about-image animate-on-scroll-left">
     <img src="{{ "/assets/img/Ceara_Byrne_0004.jpg" | relative_url }}" alt="Ceara Byrne">
   </div>
-  <div class="about-text">
-    Specializing in adaptive human-animal interfaces and ingestible biosensors, I engineer real-time systems that decode latent physiological and behavioral states using tools, such as machine learning, computer vision, and ultra-low-power embedded design.
+  <div class="about-text animate-on-scroll-right">
+    <h1 style="font-size: 2.5rem; margin-bottom: 1rem; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Dr. Ceara Byrne</h1>
+    <p style="font-size: 1.3rem; line-height: 1.8; margin-bottom: 1.5rem;">Specializing in adaptive human-animal interfaces and ingestible biosensors, I engineer real-time systems that decode latent physiological and behavioral states using cutting-edge tools like machine learning, computer vision, and ultra-low-power embedded design.</p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+      <a href="#biobehavior-section" class="research-tag biobehavior-tag" style="background: linear-gradient(135deg, var(--color-success), #059669); color: white; padding: 0.7rem 1.2rem; border-radius: 25px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);">🧠 Biobehavioral Analysis</a>
+      <a href="#ingestibles-section" class="research-tag ingestibles-tag" style="background: linear-gradient(135deg, var(--color-accent), #D97706); color: white; padding: 0.7rem 1.2rem; border-radius: 25px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);">💊 Ingestible Devices</a>
+      <a href="#wearable-section" class="research-tag wearable-tag" style="background: linear-gradient(135deg, var(--color-info), #1D4ED8); color: white; padding: 0.7rem 1.2rem; border-radius: 25px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);">⌚ Wearable Computing</a>
+      <a href="#aci-section" class="research-tag aci-tag" style="background: linear-gradient(135deg, var(--color-highlight), #DC2626); color: white; padding: 0.7rem 1.2rem; border-radius: 25px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);">🐕 Animal-Computer Interaction</a>
+    </div>
   </div>
 </section>
 
 <div class="spacer"></div>
 
 <section class="research-container">
-  <h1>Research</h1>
+  <h1 style="text-align: center; font-size: 3rem; margin-bottom: 3rem; background: linear-gradient(135deg, #ffffff, var(--color-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; position: relative; z-index: 2;">🔬 Research</h1>
 
-  <section class="research-item section-biobehavior">
-    <h2>Biobehavior</h2>
+  <section id="biobehavior-section" class="research-item section-biobehavior animate-on-scroll">
+    <h2>🧠 Biobehavior</h2>
     <div class="research-item-summary">
       <p>My research develops technology-driven methods to objectively assess behavior and suitablity, using sensors and computer vision to improve welfare, efficiency, and selection processes across species.</p>
       <button class="toggle-button" data-target="biobehavior-details">
@@ -45,8 +52,8 @@ title: Ceara Byrne
     </div>
   </section>
 
-  <section class="research-item section-ingestibles">
-    <h2>Ingestible and Implantable Devices</h2>
+  <section id="ingestibles-section" class="research-item section-ingestibles animate-on-scroll">
+    <h2>💊 Ingestible and Implantable Devices</h2>
     <div class="research-item-summary">
       <p>I engineer ingestible and implantable devices for probing the gut-brain axis. This work requires integrating miniaturized sensors, stimulators, and wireless communication modules into biocompatible platforms that can withstand the harsh gastrointestinal environment.</p>
       <button class="toggle-button" data-target="ingestibles-details">
@@ -70,8 +77,8 @@ title: Ceara Byrne
     </div>
   </section>
 
-  <section class="research-item section-wearable">
-    <h2>Wearable Computing</h2>
+  <section id="wearable-section" class="research-item section-wearable animate-on-scroll">
+    <h2>⌚ Wearable Computing</h2>
     <div class="research-item-summary">
       <p>My research also sits at the intersection of user-centered design, behavioral analysis, and wearable technology, advancing both human-device and animal-computer interaction.</p>
       <button class="toggle-button" data-target="wearable-details">
@@ -97,8 +104,8 @@ title: Ceara Byrne
   </section>
 
 
-  <section class="research-item section-aci">
-    <h2>Building out the Field of Animal-Computer Interaction</h2>
+  <section id="aci-section" class="research-item section-aci animate-on-scroll">
+    <h2>🐕 Building out the Field of Animal-Computer Interaction</h2>
     <div class="research-item-summary">
       <p>My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science to engineer technologies that support meaningful multispecies integration</p>
       <button class="toggle-button" data-target="aci-details">
@@ -126,8 +133,8 @@ title: Ceara Byrne
 
 <div class="spacer"></div>
 
-<section class="teaching-container">
-  <h1>Teaching</h1>
+<section class="teaching-container animate-on-scroll">
+  <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🎓 Teaching</h1>
   <p>My background in computer science (CS), human computer interaction (HCI), and industrial design (ID) has shaped my teaching and advising philosophy in three critical ways. A fundamental element in design is the ability to effectively and constructively critique work in a way that enables students to take action on their projects and their work. Secondly, Georgia Tech's HCI program has taught me how to "fail early, fail often, fail intelligently," ensuring that you fail in a way that cultivates adaptation and innovation. In other words, small, strategic proof-of-concepts go a long way to help make a project successful. Lastly, bridging the two fields of CS and design has taught me the importance of grounding difficult concepts to accessible topics for reflection. Asking questions, such as "how does data collection impact design?" or "would a spectrogram be a better representation for this data?" allow students to understand how each part of the process fits within the whole.</p>
 
   <p>I have been the instructor-on-record for three undergraduate human-computer interaction courses and, notably, one of those classes was conducted during the academic year at the beginning of the COVID pandemic (Spring 2020). Additionally, I have been a teaching assistant in several courses on mobile and ubiquitous computing, on human-computer interaction, and on design while at Georgia Tech.</p>
@@ -135,8 +142,8 @@ title: Ceara Byrne
 
 <div class="spacer"></div>
 
-<section class="mentorship-container">
-  <h1>Mentorship</h1>
+<section class="mentorship-container animate-on-scroll">
+  <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem; background: linear-gradient(135deg, #ffffff, var(--color-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🤝 Mentorship</h1>
   <p>One priority of my postdoctoral fellowship has been to be a more effective mentor. During the past two years, I have mentored 6 students across varying levels of academic expertise, from undergraduate to PhD. As a mentor, my goal is to not only effectively direct those in my charge, but also ensure they have the skills and confidence to accomplish their own goals in the future. My advising approach has increasingly turned to “teach people how to fail with recovery in mind”, or “fail early, fail often, fail intelligently”. Failure is okay and expected. How and how quickly one recovers from failure is what makes an effective researcher. Designing experiments to productively allow one to reflect on outcomes and pivot correctly is important. I find that mentoring is more about helping others be successful than providing them with the clearest way forward. Sometimes that can mean taking a step back and letting the students work things out for themselves, while for others it means being in the trenches and supporting them every step of the way. Mentoring requires the humility to know that there isn't one right path.</p>
 
   <p>My mentees have gone on to a variety of professions. Many work in industry, however, notably several have continued within academia. Three have continued beyond their undergraduate degrees to complete their Masters degrees at Northeastern University, University of Washington, and Harvard University. Two have continued to PhD, one studying nanorobotics at EPFL and the other in bioengineering at UC Berkeley-UCSF.</p>
@@ -144,13 +151,75 @@ title: Ceara Byrne
 
 <div class="spacer"></div>
 
-<section class="service-container">
-  <h1>Relevant Service</h1>
-  <p>From 2023 to 2025, I served on the steering committee for the International Conference on Animal-Computer Interaction, helping to guide the strategic direction of this interdisciplinary community and ensure the conference’s continued impact and growth. During this time, I took on major leadership roles, acting as program co-chair for the 2023 and 2024 conferences, where I coordinated the review process, curated the technical program, and supported high-quality scholarship. Most recently, in 2025, I am serving as Emerging Work Program co-chair, leading the integration of novel and cross-cutting research into the ACI field.</p>
+<section class="service-container animate-on-scroll">
+  <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🌟 Relevant Service</h1>
+  <p>From 2023 to 2025, I served on the steering committee for the International Conference on Animal-Computer Interaction, helping to guide the strategic direction of this interdisciplinary community and ensure the conference's continued impact and growth. During this time, I took on major leadership roles, acting as program co-chair for the 2023 and 2024 conferences, where I coordinated the review process, curated the technical program, and supported high-quality scholarship. Most recently, in 2025, I am serving as Emerging Work Program co-chair, leading the integration of novel and cross-cutting research into the ACI field.</p>
 </section>
+
+<!-- Floating Action Button -->
+<div id="floating-action" style="position: fixed; bottom: 2rem; right: 2rem; z-index: 1000; opacity: 0; transform: translateY(100px); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
+  <button onclick="scrollToTop()" style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: white; border: none; width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: all 0.3s ease;">
+    ↑
+  </button>
+</div>
+
+<!-- Progress Bar -->
+<div id="progress-bar" style="position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent)); z-index: 1001; transition: width 0.3s ease;"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Scroll-triggered animations with proper ordering
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add a small delay based on section order to ensure proper sequence
+        const sectionId = entry.target.id;
+        let delay = 0;
+
+        switch(sectionId) {
+          case 'biobehavior-section': delay = 100; break;
+          case 'ingestibles-section': delay = 200; break;
+          case 'wearable-section': delay = 300; break;
+          case 'aci-section': delay = 400; break;
+        }
+
+        setTimeout(() => {
+          entry.target.classList.add('animated');
+        }, delay);
+      }
+    });
+  }, observerOptions);
+
+  // Observe all elements with animation classes
+  document.querySelectorAll('.animate-on-scroll, .animate-on-scroll-left, .animate-on-scroll-right').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Progress bar and floating action button
+  const progressBar = document.getElementById('progress-bar');
+  const floatingAction = document.getElementById('floating-action');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.body.offsetHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+
+    progressBar.style.width = scrollPercent + '%';
+
+    if (scrollTop > 300) {
+      floatingAction.style.opacity = '1';
+      floatingAction.style.transform = 'translateY(0)';
+    } else {
+      floatingAction.style.opacity = '0';
+      floatingAction.style.transform = 'translateY(100px)';
+    }
+  });
+
   // Initialize all research items to show only summary
   const researchItems = document.querySelectorAll('.research-item');
   researchItems.forEach(item => {
@@ -224,6 +293,74 @@ document.addEventListener('DOMContentLoaded', function() {
         detailsButtonIcon.textContent = '▼';
       }
     });
+  });
+});
+
+// Scroll to top function
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Add some particle effects
+function createParticles() {
+  const particleCount = 50;
+  const container = document.body;
+
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.style.position = 'fixed';
+    particle.style.width = '2px';
+    particle.style.height = '2px';
+    particle.style.background = `hsl(${Math.random() * 60 + 180}, 70%, 60%)`;
+    particle.style.borderRadius = '50%';
+    particle.style.pointerEvents = 'none';
+    particle.style.zIndex = '1';
+    particle.style.left = Math.random() * 100 + '%';
+    particle.style.top = Math.random() * 100 + '%';
+    particle.style.animation = `floatParticle ${Math.random() * 10 + 10}s linear infinite`;
+
+    container.appendChild(particle);
+
+    // Remove particle after animation
+    setTimeout(() => {
+      if (particle.parentNode) {
+        particle.parentNode.removeChild(particle);
+      }
+    }, (Math.random() * 10 + 10) * 1000);
+  }
+}
+
+  // Create particles periodically
+setInterval(createParticles, 3000);
+
+// Enhanced smooth scrolling for research tags
+document.querySelectorAll('.research-tag').forEach(tag => {
+  tag.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      // Add a highlight effect to the target section
+      targetElement.style.transform = 'scale(1.02)';
+      targetElement.style.boxShadow = '0 20px 40px rgba(0, 212, 170, 0.4)';
+
+      // Use scrollIntoView with proper options
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+
+      // Remove highlight effect after animation
+      setTimeout(() => {
+        targetElement.style.transform = '';
+        targetElement.style.boxShadow = '';
+      }, 2000);
+    }
   });
 });
 </script>

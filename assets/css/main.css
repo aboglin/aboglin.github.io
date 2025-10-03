@@ -1,27 +1,27 @@
 :root {
-  /* Core Colors */
-  --color-background: #F7F7F7;
-  --color-text: #1E293B;
-  /* --color-primary: #3D6E70;   Deep Teal */
---color-primary: #2e2e2e;   /* Dark Olive Green */
-  --color-secondary: #1E3A8A; /* Rich Navy */
-  --color-accent: #06B6D4;    /* Vibrant Cyan */
-  --color-highlight: #F97316; /* Coral Glow */
+  /* Core Colors - More Vibrant and Exciting */
+  --color-background: #0F0F23;
+  --color-text: #E2E8F0;
+  --color-primary: #00D4AA;   /* Vibrant Teal */
+  --color-secondary: #7C3AED; /* Rich Purple */
+  --color-accent: #F59E0B;    /* Golden Yellow */
+  --color-highlight: #EF4444; /* Vibrant Red */
+  --color-success: #10B981;   /* Emerald */
+  --color-info: #3B82F6;      /* Blue */
 
   /* Alert Colors */
-  --color-success: #10B981;
   --color-warning: #F59E0B;
   --color-error: #DC2626;
 
   /* Neutrals */
-  --color-gray-light: #f7f7f7;
-  --color-gray-medium: #CBD5E1;
-  --color-gray-dark: #2E2E2E;
+  --color-gray-light: #1E293B;
+  --color-gray-medium: #475569;
+  --color-gray-dark: #0F172A;
 
-  /* Typography */
-  --font-heading: 'Helvetica', sans-serif;
-  /* --font-body: 'Inter', sans-serif; */
-  --font-body: 'Georgia', serif;
+  /* Typography - More Modern and Dynamic */
+  --font-heading: 'Inter', 'Helvetica', sans-serif;
+  --font-body: 'Inter', 'Helvetica', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Monaco', monospace;
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -42,12 +42,37 @@
 
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-body);
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: var(--color-background);
+  background: linear-gradient(135deg, var(--color-background) 0%, #1a1a2e 50%, #16213e 100%);
   color: var(--color-text);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Animated background particles */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(0, 212, 170, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+  animation: backgroundShift 20s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes backgroundShift {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  25% { transform: translateX(-10px) translateY(-5px); }
+  50% { transform: translateX(5px) translateY(-10px); }
+  75% { transform: translateX(-5px) translateY(5px); }
 }
 
 header, footer {

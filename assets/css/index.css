@@ -4,6 +4,27 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero section with animated elements */
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(0, 212, 170, 0.1), transparent);
+  animation: heroGlow 8s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes heroGlow {
+  0%, 100% { transform: rotate(0deg) scale(1); opacity: 0.3; }
+  50% { transform: rotate(180deg) scale(1.1); opacity: 0.6; }
 }
 
 /* Force stacking on very small screens */
@@ -38,19 +59,85 @@
 .about-image img {
   width: 100%;
   height: auto;
-  max-height: 400px; /* Increased height to show more of the image */
-  object-fit: contain; /* Show the full image without cropping */
-  object-position: center; /* Center the image */
+  max-height: 400px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow:
+    0 20px 40px rgba(0, 212, 170, 0.3),
+    0 0 0 1px rgba(0, 212, 170, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 2;
+}
+
+.about-image img:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:
+    0 30px 60px rgba(0, 212, 170, 0.4),
+    0 0 0 1px rgba(0, 212, 170, 0.2);
+}
+
+/* Floating particles around the image */
+.about-image::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: -10px;
+  width: 4px;
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  animation: floatParticle 3s ease-in-out infinite;
+}
+
+.about-image::before {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: -15px;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  animation: floatParticle 4s ease-in-out infinite reverse;
+}
+
+@keyframes floatParticle {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.7; }
+  50% { transform: translateY(-20px) scale(1.2); opacity: 1; }
 }
 
 .about-text {
   flex: 1;
   order: 2;
   text-align: left;
-  min-width: 0; /* Allow flex item to shrink */
-  font-size: clamp(2rem, 1.5vw, 2.5rem); /* Responsive font scaling */
-  font-weight: 400;
-  line-height: 1.5; /* Maintain good readability */
+  min-width: 0;
+  font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+  font-weight: 300;
+  line-height: 1.7;
+  position: relative;
+  z-index: 2;
+  color: var(--color-text);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes textGlow {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.1); }
+}
+
+/* Typing animation effect */
+.about-text::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
 
 /* Medium screens (tablets) */
@@ -85,13 +172,32 @@
   }
 }
 
-/* Section background alternation */
+/* Section background alternation with exciting gradients */
 .research-container {
-  background-color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   color: var(--color-background);
-  padding: 2rem;
-  margin: 2rem -2rem; /* Negative margin to break out of main padding */
-  border-radius: 0; /* Remove border radius for full width */
+  padding: 3rem 2rem;
+  margin: 3rem -2rem;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.research-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+  animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(10px, 10px); }
 }
 
 .teaching-container {
@@ -204,31 +310,101 @@
   color: var(--color-secondary);
 }
 
-/* Research item pill boxes */
+/* Research item pill boxes with exciting animations */
 .research-item {
-  background-color: var(--color-background);
-  color: var(--color-text);
-  padding: 2rem;
-  margin: 2rem 0;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #1a1a1a;
+  padding: 2.5rem;
+  margin: 2.5rem 0;
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0);
+}
+
+.research-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.research-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-color: rgba(0, 212, 170, 0.5);
+}
+
+.research-item:hover::before {
+  left: 100%;
+}
+
+/* Different colors for different research areas */
+.section-biobehavior {
+  border-left: 4px solid var(--color-success);
+}
+
+.section-ingestibles {
+  border-left: 4px solid var(--color-accent);
+}
+
+.section-wearable {
+  border-left: 4px solid var(--color-info);
+}
+
+.section-aci {
+  border-left: 4px solid var(--color-highlight);
 }
 
 .research-item h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
   margin-top: 0;
-  color: var(--color-primary);
-  border-bottom: 2px solid var(--color-primary);
-  padding-bottom: 0.3rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, var(--color-primary), var(--color-accent)) 1;
+  padding-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.research-item h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  transition: width 0.3s ease;
+}
+
+.research-item:hover h2::after {
+  width: 100%;
 }
 
 .research-item p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  color: var(--color-text);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  color: #2d2d2d;
+  font-weight: 400;
 }
 
 .research-item ul {
@@ -240,7 +416,7 @@
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 0.7rem;
-  color: var(--color-text);
+  color: #2d2d2d;
 }
 
 /* Research item links */
@@ -257,34 +433,59 @@
 
 /* Research item important notes */
 .research-item .important-note {
-  background-color: rgba(61, 110, 112, 0.1);
+  background-color: rgba(0, 212, 170, 0.1);
   border-left: 4px solid var(--color-primary);
-  color: var(--color-text);
+  color: #2d2d2d;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
 }
 
-/* Toggle button styling */
+/* Toggle button styling with exciting animations */
 .toggle-button {
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--radius-md);
+  padding: 1rem 2rem;
+  border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 4px 15px rgba(0, 212, 170, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.toggle-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.toggle-button:hover::before {
+  left: 100%;
 }
 
 .toggle-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow:
+    0 8px 25px rgba(0, 212, 170, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
 }
 
@@ -317,11 +518,204 @@
   position: relative;
 }
 
+/* Scroll-triggered animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll-left.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-on-scroll-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll-right.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Staggered animations for research items - specific order */
+#biobehavior-section { transition-delay: 0.1s; }
+#ingestibles-section { transition-delay: 0.2s; }
+#wearable-section { transition-delay: 0.3s; }
+#aci-section { transition-delay: 0.4s; }
+
+/* Enhanced floating action button */
+#floating-action button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 35px rgba(0, 212, 170, 0.6);
+}
+
+/* Progress bar enhancements */
+#progress-bar {
+  box-shadow: 0 0 10px rgba(0, 212, 170, 0.5);
+}
+
+/* Particle animations */
+@keyframes floatParticle {
+  0% {
+    transform: translateY(100vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) translateX(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Enhanced section containers */
+.teaching-container,
+.mentorship-container,
+.service-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.teaching-container::before,
+.mentorship-container::before,
+.service-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent, rgba(0, 212, 170, 0.05), transparent);
+  animation: sectionGlow 15s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes sectionGlow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+/* Research tag hover effects */
+.research-tag:hover {
+  transform: translateY(-3px) scale(1.05);
+  text-decoration: none;
+}
+
+.biobehavior-tag:hover {
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+}
+
+.ingestibles-tag:hover {
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+}
+
+.wearable-tag:hover {
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+}
+
+.aci-tag:hover {
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.5);
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Account for header height */
+}
+
+/* Ensure research sections have proper spacing for scroll positioning */
+.research-item {
+  scroll-margin-top: 100px;
+}
+
 /* Mobile responsiveness for toggle buttons */
 @media (max-width: 768px) {
   .toggle-button {
-    padding: 0.6rem 1.2rem;
+    padding: 0.8rem 1.5rem;
     font-size: 0.8rem;
-    margin-top: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .research-item {
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+
+  #floating-action {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  #floating-action button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .research-tag {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* Adjust scroll padding for mobile */
+  html {
+    scroll-padding-top: 80px;
+  }
+
+  .research-item {
+    scroll-margin-top: 80px;
   }
 }
