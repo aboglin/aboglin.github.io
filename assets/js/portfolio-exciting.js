@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
   setupScrollProgress();
 });
 
+// Cleanup on page unload
+window.addEventListener('beforeunload', cleanupPortfolioParticles);
+window.addEventListener('pagehide', cleanupPortfolioParticles);
+
 function createFloatingActionButton() {
   const floatingAction = document.createElement('div');
   floatingAction.className = 'portfolio-floating-action';
@@ -85,6 +89,10 @@ function setupScrollAnimations() {
   });
 }
 
+// Portfolio particle system with proper cleanup
+let portfolioParticleInterval;
+let activePortfolioParticles = new Set();
+
 function createPortfolioParticles() {
   function createParticle() {
     const particle = document.createElement('div');
@@ -100,20 +108,24 @@ function createPortfolioParticles() {
     particle.style.animation = `portfolioFloatParticle ${Math.random() * 15 + 10}s linear forwards`;
 
     document.body.appendChild(particle);
+    activePortfolioParticles.add(particle);
 
     // Remove particle after animation
+    const animationDuration = (Math.random() * 15 + 10) * 1000;
     setTimeout(() => {
       if (particle.parentNode) {
         particle.parentNode.removeChild(particle);
+        activePortfolioParticles.delete(particle);
       }
-    }, (Math.random() * 15 + 10) * 1000);
+    }, animationDuration);
   }
 
-  // Create particles periodically
-  setInterval(createParticle, 2000);
+  // Create particles periodically (reduced frequency)
+  portfolioParticleInterval = setInterval(createParticle, 4000);
 
   // Add CSS animation for particles
   const style = document.createElement('style');
+  style.id = 'portfolio-particle-styles';
   style.textContent = `
     @keyframes portfolioFloatParticle {
       0% {
@@ -133,6 +145,28 @@ function createPortfolioParticles() {
     }
   `;
   document.head.appendChild(style);
+}
+
+function cleanupPortfolioParticles() {
+  // Clear the interval
+  if (portfolioParticleInterval) {
+    clearInterval(portfolioParticleInterval);
+    portfolioParticleInterval = null;
+  }
+  
+  // Remove all active particles
+  activePortfolioParticles.forEach(particle => {
+    if (particle.parentNode) {
+      particle.parentNode.removeChild(particle);
+    }
+  });
+  activePortfolioParticles.clear();
+  
+  // Remove the CSS styles
+  const styleElement = document.getElementById('portfolio-particle-styles');
+  if (styleElement) {
+    styleElement.remove();
+  }
 }
 
 function scrollToTop() {

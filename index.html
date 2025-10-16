@@ -170,7 +170,7 @@ title: Ceara Byrne
       Building out the Field of Animal-Computer Interaction
     </h2>
     <div class="research-item-summary">
-      <p>My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science to engineer technologies that support meaningful multispecies integration</p>
+      <p>My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science to engineer technologies that support meaningful multispecies integration.</p>
       <button class="toggle-button" data-target="aci-details">
         <span class="button-text">Learn More</span>
         <span class="button-icon">▼</span>
@@ -400,9 +400,12 @@ function scrollToTop() {
   });
 }
 
-// Add some particle effects
+// Add some particle effects with proper cleanup
+let particleInterval;
+let activeParticles = new Set();
+
 function createParticles() {
-  const particleCount = 50;
+  const particleCount = 20; // Reduced count for better performance
   const container = document.body;
 
   for (let i = 0; i < particleCount; i++) {
@@ -417,21 +420,46 @@ function createParticles() {
     particle.style.opacity = '0.15';
     particle.style.left = Math.random() * 100 + '%';
     particle.style.top = Math.random() * 100 + '%';
-    particle.style.animation = `floatParticle ${Math.random() * 10 + 10}s linear infinite`;
+    particle.style.animation = `floatParticle ${Math.random() * 10 + 10}s linear forwards`;
 
     container.appendChild(particle);
+    activeParticles.add(particle);
 
-    // Remove particle after animation
+    // Remove particle after animation completes
+    const animationDuration = (Math.random() * 10 + 10) * 1000;
     setTimeout(() => {
       if (particle.parentNode) {
         particle.parentNode.removeChild(particle);
+        activeParticles.delete(particle);
       }
-    }, (Math.random() * 10 + 10) * 1000);
+    }, animationDuration);
   }
 }
 
-  // Create particles periodically
-setInterval(createParticles, 3000);
+function cleanupAllParticles() {
+  // Clear the interval
+  if (particleInterval) {
+    clearInterval(particleInterval);
+    particleInterval = null;
+  }
+  
+  // Remove all active particles
+  activeParticles.forEach(particle => {
+    if (particle.parentNode) {
+      particle.parentNode.removeChild(particle);
+    }
+  });
+  activeParticles.clear();
+}
+
+// Create particles periodically (only on home page)
+if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+  particleInterval = setInterval(createParticles, 5000); // Increased interval for better performance
+}
+
+// Cleanup on page unload
+window.addEventListener('beforeunload', cleanupAllParticles);
+window.addEventListener('pagehide', cleanupAllParticles);
 
 // Card toggle functionality
 document.querySelectorAll('.card-toggle').forEach(button => {
