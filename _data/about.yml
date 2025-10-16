@@ -49,7 +49,7 @@ research_sections:
     description: |
       My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science.
     summary: |
-      My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science to engineer technologies that support meaningful multispecies integration. 
+      My research builds out the emerging field of Animal-Computer Interaction by leveraging advances from biomedical engineering, veterinary science, animal behavior, and computer science to engineer technologies that support meaningful multispecies integration. \
     details: |
       Through the development of sensing systems, ingestible devices, and interactive environments, I create new tools and frameworks that enable richer communication and data sharing between humans and animals in diverse contexts, from farming and laboratory research to home and clinical care. This work aims to forge deeper, bidirectional relationships, advancing our understanding of animal agency while expanding the possibilities for multispecies collaboration and shared experiences.
     icon:
