@@ -13,3 +13,6 @@ collections:
     output: true
   pdf:
     output: true
+
+# Google Analytics
+google_analytics: G-GJYV6YNMKC  # Replace with your actual Google Analytics 4 measurement ID

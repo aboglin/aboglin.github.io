@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <title>{{ page.short_title | default: page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  
+  <!-- Google Analytics -->
+  {% if site.google_analytics %}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
   {% if page.url contains '/portfolio/' %}
   <link rel="stylesheet" href="{{ "/assets/css/portfolio_filter.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/portfolio-exciting.css" | relative_url }}">
