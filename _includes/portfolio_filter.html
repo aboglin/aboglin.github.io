@@ -18,24 +18,12 @@
 
   <div class="content">
     <ul id="project-list">
-      {% for project in site.portfolio %}
-        {% assign url = project.id | relative_url %}
-        {% assign portfolio = site.data.portfolio[project.slug] %}
-        {% if portfolio == nil %}
-          {% continue %}
-        {% endif %}
-        {% assign has_tag = false %}
-        {% for tag in portfolio.tags %}
-          {% if all_tags contains tag %}
-            {% assign has_tag = true %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-        {% if has_tag == false %}
-          {% continue %}
-        {% endif %}
-        <li class="project-item" data-tags="{{ portfolio.tags | join: ' ' }}">
-          <a href="{{ url }}">{{ portfolio.title }}</a>
+      {% for project in site.data.portfolio %}
+        {% assign project_key = project[0] %}
+        {% assign project_data = project[1] %}
+        {% assign url = "/portfolio/" | append: project_key | relative_url %}
+        <li class="project-item" data-tags="{{ project_data.tags | join: ' ' }}">
+          <a href="{{ url }}">{{ project_data.title }}</a>
         </li>
       {% endfor %}
     </ul>
