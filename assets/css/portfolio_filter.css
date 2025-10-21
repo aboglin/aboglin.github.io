@@ -10,6 +10,7 @@
   max-width: 20%;
   padding: 1rem;
   background-color: var(--color-gray-light);
+  display: block; /* Ensure sidebar is visible by default */
 }
 
 .content {
