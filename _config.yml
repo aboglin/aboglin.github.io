@@ -1,0 +1,18 @@
+title: Ceara Byrne
+description: Data-Driven Design.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cearabyrne.com" # Replace with your GitHub Pages URL
+markdown: kramdown
+theme: jekyll-theme-minimal
+# Additional configuration options can be added here.
+
+collections:
+  portfolio:
+    output: true
+  domains:
+    output: true
+  pdf:
+    output: true
+
+# Google Analytics - Set your actual GA4 measurement ID here
+google_analytics: G-GJYV6YNMKC  # Your actual Google Analytics 4 measurement ID
