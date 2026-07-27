@@ -46,7 +46,15 @@
     flex: none !important;
     order: 2;
     width: 100% !important;
-    font-size: clamp(0.6rem, 1vw, 0.8rem); /* Even smaller scaling for phones */
+    font-size: var(--text-base);
+  }
+
+  .about-text h1 {
+    font-size: var(--text-2xl) !important;
+  }
+
+  .about-text > p {
+    font-size: var(--text-lg) !important;
   }
 }
 
@@ -139,7 +147,7 @@
   }
 
   .about-text {
-    font-size: clamp(1.5rem, 1.2vw, 2.0rem); /* Smaller scaling for tablets */
+    font-size: var(--text-lg);
   }
 }
 
@@ -716,13 +724,44 @@ html {
 @media (max-width: 768px) {
   .toggle-button {
     padding: 0.8rem 1.5rem;
-    font-size: 0.8rem;
+    font-size: var(--text-base);
     margin-top: 1rem;
   }
 
   .research-item {
-    padding: 2rem;
-    margin: 2rem 0;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .research-container h1 {
+    font-size: var(--text-3xl) !important;
+  }
+
+  .research-item h2,
+  .research-container h2 {
+    font-size: var(--text-xl);
+  }
+
+  .research-item p,
+  .research-container p,
+  .teaching-container p,
+  .mentorship-container p,
+  .service-container p {
+    font-size: var(--text-lg);
+  }
+
+  .research-item li,
+  .research-container li,
+  .teaching-container li,
+  .mentorship-container li,
+  .service-container li {
+    font-size: var(--text-base);
+  }
+
+  .teaching-container h1,
+  .mentorship-container h1,
+  .service-container h1 {
+    font-size: var(--text-xl) !important;
   }
 
   #floating-action {
@@ -737,8 +776,8 @@ html {
   }
 
   .research-tag {
-    padding: 0.6rem 1rem !important;
-    font-size: 0.8rem !important;
+    padding: 0.65rem 1rem !important;
+    font-size: var(--text-sm) !important;
   }
 
   /* Adjust scroll padding for mobile */

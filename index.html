@@ -4,10 +4,14 @@ title: Ceara Byrne
 ---
 
 <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
+<link rel="preload" as="image" href="{{ "/assets/img/Ceara_Byrne_0004.webp" | relative_url }}" type="image/webp">
 
 <section class="about-container">
   <div class="about-image animate-on-scroll-left">
-    <img src="{{ "/assets/img/Ceara_Byrne_0004.jpg" | relative_url }}" alt="Ceara Byrne">
+    <picture>
+      <source srcset="{{ "/assets/img/Ceara_Byrne_0004.webp" | relative_url }}" type="image/webp">
+      <img src="{{ "/assets/img/Ceara_Byrne_0004.jpg" | relative_url }}" alt="Ceara Byrne" width="533" height="800" fetchpriority="high" decoding="async">
+    </picture>
   </div>
   <div class="about-text animate-on-scroll-right">
     <h1 style="font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: var(--font-bold); margin-bottom: 1rem; color: var(--color-text); letter-spacing: -0.02em;">Ceara Byrne, PhD</h1>
@@ -224,8 +228,14 @@ title: Ceara Byrne
         <p>As a mentor, my goal is to not only effectively direct those in my charge, but also ensure they have the skills and confidence to accomplish their own goals in the future. My advising approach has increasingly turned to "teach people how to fail with recovery in mind", or "fail early, fail often, fail intelligently". Failure is okay and expected. How and how quickly one recovers from failure is what makes an effective researcher. Designing experiments to productively allow one to reflect on outcomes and pivot correctly is important. I find that mentoring is more about helping others be successful than providing them with the clearest way forward. Sometimes that can mean taking a step back and letting the students work things out for themselves, while for others it means being in the trenches and supporting them every step of the way. Mentoring requires the humility to know that there isn't one right path.</p>
         <p>My mentees have gone on to a variety of professions. Many work in industry, however, notably several have continued within academia. Three have continued beyond their undergraduate degrees to complete their Masters degrees at Northeastern University, University of Washington, and Harvard University. Two have continued to PhD, one studying nanorobotics at EPFL and the other in bioengineering at UC Berkeley-UCSF.</p>
         <div class="mentorship-images" style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; justify-content: center;">
-          <img src="{{ "/assets/img/IMG_7170.jpg" | relative_url }}" alt="Mentorship" style="width: 48%; max-width: 400px; height: auto; border-radius: 8px; object-fit: cover;">
-          <img src="{{ "/assets/img/IMG_6724.JPG" | relative_url }}" alt="Mentorship" style="width: 48%; max-width: 150px; height: auto; border-radius: 8px; object-fit: cover;">
+          <picture>
+            <source srcset="{{ "/assets/img/IMG_7170.webp" | relative_url }}" type="image/webp">
+            <img src="{{ "/assets/img/IMG_7170.jpg" | relative_url }}" alt="Mentorship" width="800" height="600" loading="lazy" decoding="async" style="width: 48%; max-width: 400px; height: auto; border-radius: 8px; object-fit: cover;">
+          </picture>
+          <picture>
+            <source srcset="{{ "/assets/img/IMG_6724.webp" | relative_url }}" type="image/webp">
+            <img src="{{ "/assets/img/IMG_6724.jpg" | relative_url }}" alt="Mentorship" width="300" height="225" loading="lazy" decoding="async" style="width: 48%; max-width: 150px; height: auto; border-radius: 8px; object-fit: cover;">
+          </picture>
         </div>
       </div>
       <button class="card-toggle" data-target="mentorship-details">

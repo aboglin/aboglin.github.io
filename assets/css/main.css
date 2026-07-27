@@ -173,6 +173,14 @@ header nav a {
 }
 
 @media (max-width: 576px) {
+  body {
+    font-size: 1.0625rem; /* 17px — slightly larger for phone readability */
+  }
+
+  main {
+    padding: 1.25rem;
+  }
+
   nav {
     display: none;
   }
@@ -182,8 +190,27 @@ header nav a {
     width: 100%;
   }
 
+  header.expanded nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  header.expanded nav ul li {
+    margin-left: 0;
+  }
+
+  header.expanded nav ul li a {
+    font-size: 1.125rem;
+  }
+
   #nav-toggle {
     display: block;
+  }
+
+  header h1 {
+    font-size: var(--text-lg);
+    max-width: 55%;
   }
 }
 
