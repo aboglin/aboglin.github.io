@@ -18,16 +18,16 @@ title: Ceara Byrne
     <p style="font-size: var(--text-xl); font-weight: var(--font-normal); line-height: 1.7; margin-bottom: 1.5rem; color: var(--color-text-secondary); letter-spacing: -0.01em;">Specializing in adaptive human-animal interfaces and ingestible biosensors, <span style="background: linear-gradient(120deg, rgba(47, 194, 147, 0.541) 0%, rgba(16, 185, 129, 0.719) 100%); padding: 0.2rem 0.4rem; border-radius: 4px; font-weight: var(--font-medium); color: var(--color-text);">I engineer real-time systems that decode latent multimodal physiological and behavioral states</span> using cutting-edge tools like machine learning, computer vision, and ultra-low-power embedded design.</p>
     <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
       {% for section in site.data.about.research_sections %}
-        <a href="{{ section[1].href }}" class="research-tag {{ section[0] }}-tag" style="background: {{ section[1].color }}; color: white; padding: 0.5rem 1rem; border-radius: 8px; font-size: var(--text-sm); font-weight: var(--font-medium); text-decoration: none; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2); display: inline-flex; align-items: center; gap: 0.5rem;">
+        <a href="{{ section[1].href }}" class="research-tag {{ section[0] }}-tag">
           {% if section[1].icon.type == "svg" %}
             {% if section[1].icon.path %}
-              <img src="{{ section[1].icon.path | relative_url }}" alt="{{ section[1].heading }} icon" width="16" height="16" style="filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+              <img src="{{ section[1].icon.path | relative_url }}" alt="{{ section[1].heading }} icon" width="16" height="16" class="research-tag-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
               <svg width="16" height="16" viewBox="{% if section[0] == 'biobehavior' %}0 0 1024 1024{% else %}0 0 24 24{% endif %}" fill="white" style="display: none;"><path d="{{ section[1].icon.fallback }}"/></svg>
             {% else %}
               <svg width="16" height="16" viewBox="{% if section[0] == 'biobehavior' %}0 0 1024 1024{% else %}0 0 24 24{% endif %}" fill="white"><path d="{{ section[1].icon.fallback }}"/></svg>
             {% endif %}
           {% elsif section[1].icon.type == "image" %}
-            <img src="{{ section[1].icon.path | relative_url }}" alt="{{ section[1].heading }} icon" width="16" height="16" style="filter: brightness(0) invert(1);">
+            <img src="{{ section[1].icon.path | relative_url }}" alt="{{ section[1].heading }} icon" width="16" height="16" class="research-tag-icon">
           {% endif %}
           {{ section[1].heading }}
         </a>
@@ -108,6 +108,7 @@ title: Ceara Byrne
       <p class="important-note">This convergence of biomedical engineering and neurogastroenterology provides a pathway to mechanistically decode gut-brain communication and design targeted interventions for disorders like irritable bowel syndrome, obesity, and functional dyspepsia. This work matters because it enables precise, objective insights into the complex communication between the gut and brain, ultimately uncovering how gastrointestinal activity influences neural function and health, improving patient outcomes through personalized and mechanistically-informed interventions.</p>
       <p><b>Relevant Publications:</b></p>
       <ul>
+        <li>Byrne, C., Tong, X., You, S., Acuña García, K., You, S., Arora, A., Ballinger, I., Gierlach, A., Cai, Y., Perepelook, V., Pettinari, A., Laidlaw, B., Guevara, A., Platero, M., Fabian, N., Hayward, A., Traverso, G. (2026, July). Circadian Rhythms Using Ingestible IMUs. In Proceedings of the 48th International Conference of the IEEE Engineering in Medicine and Biology Society (Accepted).</li>
         <li>McRae, J., Jaffe, E., Ballinger, I., Gierlach, A., <b><em>Byrne, C.</em></b>, Lowell, A., Ford, R., Martinet, V., Nguyen, T., Levering, V., Kang, Z., Herrera, S., Jenkins, J., Pettinari, A., Guevara, A., Fabian, N., Hayward, A., Laken, S., Jimenez, M., Traverso, G. Ingestible Ultralong Gastric Residency Platform with Wirelessly-Triggered Disassembly for Continuous Monitoring. Science Translational Medicine. (Under Review).</li>
         <li>Srinivasan, S,. Alshareef, A., Hwang, A,. <b><em>Byrne, C.</em></b>, Kuosmann, J., Ishida, K., Jenkins, J., Liu, S., Madani, W., Hayward, A., Fabian, N., Traverso, G.  (2023). A vibrating ingestible bioelectronic stimulator modulates gastric stretch receptors for illusory satiety. Science Advances, 9(51), eadj3003.</li>
       </ul>

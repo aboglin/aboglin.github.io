@@ -363,7 +363,7 @@
 
 .research-item h2 {
   font-family: var(--font-heading);
-  font-size: var(--text-2xl);
+  font-size: var(--text-3xl);
   font-weight: var(--font-semibold);
   margin-bottom: 1rem;
   margin-top: 0;
@@ -380,7 +380,7 @@
 }
 
 .research-item p {
-  font-size: var(--text-base);
+  font-size: var(--text-lg);
   font-weight: var(--font-normal);
   line-height: 1.7;
   margin-bottom: 1.2rem;
@@ -394,7 +394,7 @@
 }
 
 .research-item li {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-weight: var(--font-normal);
   line-height: 1.5;
   margin-bottom: 0.7rem;
@@ -687,7 +687,41 @@
   50% { opacity: 0.6; transform: scale(1.05); }
 }
 
-/* Research tag hover effects */
+/* Research tags */
+.research-tag {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.research-tag-icon {
+  filter: brightness(0) invert(1);
+}
+
+.biobehavior-tag {
+  background: var(--color-success);
+}
+
+.ingestibles-tag {
+  background: var(--color-accent);
+}
+
+.wearable-tag {
+  background: var(--color-info);
+}
+
+.aci-tag {
+  background: var(--color-highlight);
+}
+
 .research-tag:hover {
   transform: translateY(-3px) scale(1.05);
   text-decoration: none;
@@ -734,12 +768,12 @@ html {
   }
 
   .research-container h1 {
-    font-size: var(--text-3xl) !important;
+    font-size: var(--text-4xl) !important;
   }
 
   .research-item h2,
   .research-container h2 {
-    font-size: var(--text-xl);
+    font-size: var(--text-2xl);
   }
 
   .research-item p,
@@ -747,7 +781,7 @@ html {
   .teaching-container p,
   .mentorship-container p,
   .service-container p {
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
   }
 
   .research-item li,
@@ -755,7 +789,7 @@ html {
   .teaching-container li,
   .mentorship-container li,
   .service-container li {
-    font-size: var(--text-base);
+    font-size: var(--text-lg);
   }
 
   .teaching-container h1,
